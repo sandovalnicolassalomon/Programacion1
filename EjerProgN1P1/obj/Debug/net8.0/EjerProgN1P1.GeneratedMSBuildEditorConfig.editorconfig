@@ -1,0 +1,17 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EjerProgN1P1
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\Emiliano\Documents\GitHub\INFT_N-93_1B\Programacion1\EjerProgN1P1\
+=======
+build_property.ProjectDir = D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\EjerProgN1P1\
+>>>>>>> a7928446dcd99e81f79af72646676ec5f9e6b402
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

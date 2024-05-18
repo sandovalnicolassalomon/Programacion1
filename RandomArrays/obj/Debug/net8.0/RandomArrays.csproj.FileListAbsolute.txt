@@ -1,0 +1,12 @@
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\bin\Debug\net8.0\RandomArrays.deps.json
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\bin\Debug\net8.0\RandomArrays.dll
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\bin\Debug\net8.0\RandomArrays.pdb
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.AssemblyInfoInputs.cache
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.AssemblyInfo.cs
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.csproj.CoreCompileInputs.cache
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.sourcelink.json
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.dll
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\refint\RandomArrays.dll
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\RandomArrays.pdb
+D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\RandomArrays\obj\Debug\net8.0\ref\RandomArrays.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Ejer20240426/1.0.0": {
+        "runtime": {
+          "Ejer20240426.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ejer20240426/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
