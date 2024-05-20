@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "uXMuFI9OYBW8wlAuHfTOO1sNgsvTMnQFI2VKxXQp5C18sJgvJzd/u3B3BIW1d5bd3HWGJJ0oghDe2DRn5FbR5Q==",
+  "dgSpecHash": "HhkjUvygAoa67bU5IZ4b+rCCpDYOftaA9WgKkl5uBQjgAPTrRkfSa3XhoxU4HNEz2AYvEuF0q02K7Cn+OIcB/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
-=======
-  "dgSpecHash": "/IMFD7WhYaqPKNz3ZLEWReWYA99lWk0UQpA4ZYYnIUP7Qm+qyvemXy/YXbfn5cUbpnE71+injlCEcZknl/c+iQ==",
-  "success": true,
-  "projectFilePath": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
->>>>>>> a7928446dcd99e81f79af72646676ec5f9e6b402
+  "projectFilePath": "C:\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Programacion1\\EjerProgN1P1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

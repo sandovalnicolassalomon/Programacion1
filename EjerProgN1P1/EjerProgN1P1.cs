@@ -55,8 +55,11 @@ namespace EjerProgN1P1
             char letra;
             string msj;
             msj = "NO ES VOCAL";
-            Console.WriteLine("Ingrese una letra para saber si es una vocal.");
-            Console.WriteLine("Ingrese una letra y oprima enter");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine("Ingrese una letra para saber si es una vocal y oprima enter.");
+            Console.ForegroundColor = ConsoleColor.White;
+
             letra = Console.ReadKey().KeyChar;
             Console.WriteLine("");
 
@@ -81,7 +84,11 @@ namespace EjerProgN1P1
                 msj = "ES VOCAL";
             }
 
-            Console.WriteLine(msj);
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine("\n\t" + msj);
+            Console.ForegroundColor = ConsoleColor.White;
+
 
             Utiles.OprimaTeclaContinuar();
         }
@@ -89,24 +96,84 @@ namespace EjerProgN1P1
         private static void Ejercicio5()
         {
             Console.Clear();
-            int num1;
-            int num2;
-            int mayor = 0;
-            Console.WriteLine("Ingrese dos numero para saber cual es el mayor.");
-            Console.WriteLine("Ingrese el primer numero");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            if (num1 <= num2)
+            byte cont = 0;
+            string ingreso;
+            double num1 = 0;
+            double num2 = 0;
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine("Ingrese dos numeros para saber cual es el mayor.");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Ingrese el primer numero o 'q' para salir y oprima enter.");
+
+
+            while (cont < 3)
             {
-                mayor = num2;
+                cont++;
+                ingreso = Console.ReadLine() ?? " ";
+                if (ingreso == "q" || ingreso == "Q")
+                    return;
+
+                if (Utiles.ValidacionDouble(ingreso.Trim()))
+                {
+                    num1 = Convert.ToDouble(ingreso, CultureInfo.InvariantCulture);
+                    break;
+                }
+
+                if (cont == 3)
+                {
+                    Utiles.DemasiadosIntentos();
+                    return;
+                }
+                Console.WriteLine(INTENTE_NUEVAMENTE);
             }
-            if (num1 > num2)
+            cont = 0;
+            Console.WriteLine("Ingrese el segundo numero entero o 'q' para salir y oprima enter.");
+
+            while (cont < 3)
             {
-                mayor = num1;
+                cont++;
+                ingreso = Console.ReadLine() ?? " ";
+                if (ingreso == "q" || ingreso == "Q")
+                    return;
+
+                if (Utiles.ValidacionDouble(ingreso.Trim()))
+                {
+                    num2 = Convert.ToDouble(ingreso, CultureInfo.InvariantCulture);
+                    break;
+                }
+
+                if (cont == 3)
+                {
+                    Utiles.DemasiadosIntentos();
+                    return;
+                }
+                Console.WriteLine(INTENTE_NUEVAMENTE);
+            }
+            if (num1 < num2)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine("\n\tEl mayor es el segundo numero: " + num2);
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else if (num1 > num2)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine("\n\tEl mayor es el primer numero: " + num1);
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else
+            {
+
+
+                Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine("\n\tLos Numeros son iguales");
+                Console.ForegroundColor = ConsoleColor.White;
             }
 
-            Console.WriteLine("El mayor es el numero " + mayor);
 
             Utiles.OprimaTeclaContinuar();
 
@@ -117,15 +184,17 @@ namespace EjerProgN1P1
         {
             Console.Clear();
             byte cont = 0;
-            const int DIA = 86400;
-            const int HORA = 360;
+            const int ANIOS = 31_536_000;
+            const int SEMANA = 604_800;
+            const int DIA = 86_400;
+            const int HORA = 3_600;
             const int MINUTO = 60;
             int tiempo = 0;
-            int dias;
-            int horas;
-            int minutos;
-            int segundos;
-            Console.WriteLine("Convertamos una cantidad de segundos en Hora, Minutos y segundos.");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine("Convertamos una cantidad de segundos en años, semanas, dias, Hora, Minutos y segundos.");
+            Console.ForegroundColor = ConsoleColor.White;
+
             Console.WriteLine("Ingrese una cantidad de segundos y oprima enter");
             string ingreso;
             while (cont < 3)
@@ -148,12 +217,22 @@ namespace EjerProgN1P1
                 }
                 Console.WriteLine(INTENTE_NUEVAMENTE);
             }
-            dias = tiempo / DIA;
-            horas = (tiempo % DIA) / HORA;
-            tiempo = tiempo % HORA;
-            minutos = tiempo / MINUTO;
-            segundos = tiempo % MINUTO;
-            Console.WriteLine("El tiempo es " + dias + " dias : " + horas + " horas : " + minutos + " minutos : " + segundos + " segundos.");
+
+            int anios = tiempo / ANIOS;
+            tiempo %= ANIOS;
+            int semanas = tiempo / SEMANA;
+            tiempo %= SEMANA;
+            int dias = tiempo / DIA;
+            tiempo %= DIA;
+            int horas = tiempo / HORA;
+            tiempo %= HORA;
+            int minutos = tiempo / MINUTO;
+            int segundos = tiempo % MINUTO;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\tEl tiempo es " + anios + " años : " + semanas + " semanas : " + dias + " dias : " + horas + " horas : " + minutos + " minutos : " + segundos + " segundos.");
+            Console.ForegroundColor = ConsoleColor.White;
+
 
             Utiles.OprimaTeclaContinuar();
         }
@@ -162,10 +241,14 @@ namespace EjerProgN1P1
         {
             Console.Clear();
             byte cont = 0;
-            double PI = Math.PI;
+            const double PI = Math.PI;
             double area;
             double radio = 0;
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
             Console.WriteLine("Obtengamos el area de un circulo mediante su radio");
+            Console.ForegroundColor = ConsoleColor.White;
+
             Console.WriteLine("Ingrese el valor del radio y oprima enter");
             string ingreso;
             while (cont < 3)
@@ -189,7 +272,11 @@ namespace EjerProgN1P1
                 Console.WriteLine(INTENTE_NUEVAMENTE);
             }
             area = PI * Math.Pow(radio, 2);
-            Console.WriteLine("El area del circulo es: " + area);
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine("\n\tEl area del circulo es: " + area);
+            Console.ForegroundColor = ConsoleColor.White;
+
 
             Utiles.OprimaTeclaContinuar();
 
@@ -204,7 +291,9 @@ namespace EjerProgN1P1
             double num2 = 0.0;
             double potencia;
 
-            Console.WriteLine("\nHallemos la potencia de un numero.");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Hallemos la potencia de un numero.");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Ingrese el numero base o 'q' para salir y oprima enter");
 
             string ingreso;
@@ -228,10 +317,10 @@ namespace EjerProgN1P1
                 }
                 Console.WriteLine(INTENTE_NUEVAMENTE);
             }
-//b
 
             Console.WriteLine("Ingrese el numero exponente o 'q' para salir y oprima enter");
             cont = 0;
+            
             while (cont < 3)
             {
                 cont++;
@@ -246,7 +335,6 @@ namespace EjerProgN1P1
                     break;
                 }
 
-
                 if (cont == 3)
                 {
                     Utiles.DemasiadosIntentos();
@@ -255,12 +343,10 @@ namespace EjerProgN1P1
                 Console.WriteLine(INTENTE_NUEVAMENTE);
             }
 
-
             potencia = Math.Pow(num1, num2);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\tLa potencia de {0}^{1} es: {2}", num1, num2, potencia);
             Console.ForegroundColor = ConsoleColor.White;
-
 
             Utiles.OprimaTeclaContinuar();
         }
@@ -274,8 +360,13 @@ namespace EjerProgN1P1
             int resto;
             int num1 = 0;
             int num2 = 0;
-            Console.WriteLine("Obtengamos el coeficiente y el resto entre dos numeros enteros.");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine("Obtengamos el cociente y el resto entre dos numeros enteros.");
+            Console.ForegroundColor = ConsoleColor.White;
+
             Console.WriteLine("Ingrese el primer numero entero o 'q' para salir y oprima enter.");
+
             string ingreso;
 
             while (cont < 3)
@@ -329,6 +420,7 @@ namespace EjerProgN1P1
 
             cociente = num1 / num2;
             resto = num1 % num2;
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\tEl cociente de {0} / {1} es: {2}", num1, num2, cociente);
             Console.WriteLine("\tEl resto de {0} / {1} es: {2}", num1, num2, resto);

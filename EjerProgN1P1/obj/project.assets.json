@@ -8,38 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Emiliano\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\e.campodonico\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> a7928446dcd99e81f79af72646676ec5f9e6b402
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
+      "projectUniqueName": "C:\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
       "projectName": "EjerProgN1P1",
-      "projectPath": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
+      "projectPath": "C:\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
       "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\EjerProgN1P1\\obj\\",
-=======
-      "projectUniqueName": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
-      "projectName": "EjerProgN1P1",
-      "projectPath": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\EjerProgN1P1\\EjerProgN1P1.csproj",
-      "packagesPath": "C:\\Users\\e.campodonico\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\EjerProgN1P1\\obj\\",
->>>>>>> a7928446dcd99e81f79af72646676ec5f9e6b402
+      "outputPath": "C:\\Programacion1\\EjerProgN1P1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Emiliano\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-        "C:\\Users\\e.campodonico\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> a7928446dcd99e81f79af72646676ec5f9e6b402
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -83,8 +64,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Programacion1\\EjerProgN1P1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

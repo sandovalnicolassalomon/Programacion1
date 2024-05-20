@@ -13,8 +13,8 @@
             //Ejercicio3();
             //Ejemplo1();
             //Ejemplo2();
-            Ejercicio4();
-
+            //Ejercicio4();
+            WhileDoWhile();
 
 
 
@@ -46,15 +46,13 @@
          */
 
             int suma = 0;
-            int desde = 0;
-            int hasta = 0;
             Console.WriteLine($"sumemos dos valores enteros mediante limites marcados");
 
             Console.WriteLine($"Ingrese dos numeros para indicar los limites ");
             Console.WriteLine($"Ingrese el numero de desde donde quiera arrancar el limite");
-            desde = Convert.ToInt32(Console.ReadLine());
+            int desde = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Ingrese el numero de hasta donde quiera terminar el limite");
-            hasta = Convert.ToInt32(Console.ReadLine());
+            int hasta = Convert.ToInt32(Console.ReadLine());
 
             for (var i = desde; i < hasta; i++)
             {
@@ -68,21 +66,19 @@
 
         public static void Ejercicio3()
         {
-            /*
-                desarrollar un programa que devuelva el area de un trangulo rectangulo
-                pidiendo al usuario la longitud de la base y la altura del mismo
-
-                area de trangulo rectangulo: (base * altura)/2
-          */
-            float var_base = 0, var_altura = 0, area = 0;
-
             Console.WriteLine($"Obtengamos el area de un triangulo rectangulo\nIngrese la base del triangulo");
-            var_base = Convert.ToInt32(Console.ReadLine());
+            float var_base = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Ingrese la altura del triangulo");
-            var_altura = Convert.ToInt32(Console.ReadLine());
+            float var_altura = Convert.ToInt32(Console.ReadLine());
 
-            area = var_base * var_altura / 2;
+            /*
+            desarrollar un programa que devuelva el area de un trangulo rectangulo
+            pidiendo al usuario la longitud de la base y la altura del mismo
+
+            area de trangulo rectangulo: (base * altura)/2
+            */
+            float area = var_base * var_altura / 2;
             Console.WriteLine($"El area del triangulo rectangulo es: {area}");
 
 
@@ -95,7 +91,9 @@
             {
                 //* hacer
                 Console.WriteLine($"Desea salir?");
-                salir = Console.ReadLine();
+                salir = Console.ReadLine() ?? " ";
+
+                Console.WriteLine($"salir: {salir}");
 
 
             }
@@ -103,7 +101,7 @@
             {
                 //* hacer
                 Console.WriteLine($"Desea salir?");
-                salir = Console.ReadLine();
+                salir = Console.ReadLine() ?? " ";
 
 
             } while (salir != "Si");
@@ -140,7 +138,7 @@
 
                 }
                 Console.WriteLine($"0- Para salir");
-                opcion = Console.ReadLine();
+                opcion = Console.ReadLine() ?? " ";
 
                 Console.Clear();
 
@@ -153,6 +151,7 @@
 
         public static void Ejercicio4()
         {
+
             /*
             usando bucles
             desarrollar una calculadora que cumpla con las siguientes especificaciones/ requisitos
@@ -160,10 +159,7 @@
             - debe tener un menu de opciones y el mismo debe ser recursivo
             -sean creativos con los colores y como organizan los mensajes en la consola
             */
-            int opcion = 0;
-            int num1 = 0;
-            int num2 = 0;
-
+            int opcion;
             do
             {
                 Console.ForegroundColor = ConsoleColor.Magenta;
@@ -183,6 +179,8 @@
                 opcion = Convert.ToInt32(Console.ReadLine());
 
 
+                int num1;
+                int num2;
                 if (opcion == 1)
                 {
                     Console.Clear();

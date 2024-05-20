@@ -12,20 +12,27 @@ namespace EjerProgN1P1
     {
         public static void OprimaTeclaContinuar()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nOprima una tecla para continuar");
+            Console.ForegroundColor = ConsoleColor.White;
+
             Console.ReadKey();
         }
 
         public static void MenuPrincipal()
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
             Console.WriteLine("Mediante el teclado elija un Ejercicio por su indice.");
+            Console.ForegroundColor = ConsoleColor.White;
+
             for (int i = 1; i < 7; i++)
             {
-                Console.WriteLine(i +"- Ejercicio " + i);
-                
+                Console.WriteLine("\t" + i + "- Ejercicio " + i);
+
             }
-            
-            Console.WriteLine("0- Salir.");
+
+            Console.WriteLine("\t0- Salir.");
         }
 
 
@@ -97,11 +104,6 @@ namespace EjerProgN1P1
 
             return false;
         }
-        // tu hace 5 minutos
-        //! tu hace 5 minutos
-        //? tu hace 5 minutos
-        //* tu hace 5 minutos
-        //todo tu hace 5 minutos
 
         #region Expresiones Regulares
         [GeneratedRegex(@"^(\-\d|\d)+$")]

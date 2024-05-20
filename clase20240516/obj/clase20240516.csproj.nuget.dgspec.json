@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\clase20240516\\clase20240516.csproj": {}
+    "C:\\Programacion1\\clase20240516\\clase20240516.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\clase20240516\\clase20240516.csproj": {
+    "C:\\Programacion1\\clase20240516\\clase20240516.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\clase20240516\\clase20240516.csproj",
+        "projectUniqueName": "C:\\Programacion1\\clase20240516\\clase20240516.csproj",
         "projectName": "clase20240516",
-        "projectPath": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\clase20240516\\clase20240516.csproj",
+        "projectPath": "C:\\Programacion1\\clase20240516\\clase20240516.csproj",
         "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emiliano\\Documents\\GitHub\\INFT_N-93_1B\\Programacion1\\clase20240516\\obj\\",
+        "outputPath": "C:\\Programacion1\\clase20240516\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emiliano\\AppData\\Roaming\\NuGet\\NuGet.Config"
