@@ -13,8 +13,8 @@
             //Ejercicio3();
             //Ejemplo1();
             //Ejemplo2();
-            //Ejercicio4();
-            WhileDoWhile();
+            Ejercicio4();
+            //WhileDoWhile();
 
 
 
@@ -162,146 +162,138 @@
             int opcion;
             do
             {
-                Console.ForegroundColor = ConsoleColor.Magenta;
-
-                Console.WriteLine($"Elija una opcion segun su indice y oprima enter");
-                Console.ForegroundColor = ConsoleColor.White;
+                opcion = MenuPrincipal();
 
 
-                Console.WriteLine($"\t1- Sumar dos numeros");
-                Console.WriteLine($"\t2- Restar dos numeros");
-                Console.WriteLine($"\t3- Multiplicar dos numeros");
-                Console.WriteLine($"\t4- Dividir dos numeros");
-
-
-                Console.WriteLine($"\t0- para salir");
-
-                opcion = Convert.ToInt32(Console.ReadLine());
-
-
-                int num1;
-                int num2;
-                if (opcion == 1)
-                {
-                    Console.Clear();
-
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Sumemos dos numeros");
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-                    Console.WriteLine($"Ingrese el primer numero y oprima enter");
-                    num1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Ingrese el segundo numero y oprima enter");
-                    num2 = Convert.ToInt32(Console.ReadLine());
-
-                    Console.ForegroundColor = ConsoleColor.Green;
-
-                    Console.WriteLine($"\n\n\tEl resultado de la suma es {num1 + num2}\n");
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Oprima una tecla para continuar");
-                    Console.ReadKey();
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-                }
-
-                if (opcion == 2)
-                {
-                    Console.Clear();
-
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Restemos dos numeros");
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-                    Console.WriteLine($"Ingrese el primer numero y oprima enter");
-                    num1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Ingrese el segundo numero y oprima enter");
-                    num2 = Convert.ToInt32(Console.ReadLine());
-
-                    Console.ForegroundColor = ConsoleColor.Green;
-
-                    Console.WriteLine($"\n\n\tEl resultado de la resta es {num1 - num2}\n");
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Oprima una tecla para continuar");
-                    Console.ReadKey();
-
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-                }
-
-                if (opcion == 3)
-                {
-                    Console.Clear();
-
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Multipliquemos dos numeros");
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-                    Console.WriteLine($"Ingrese el primer numero y oprima enter");
-                    num1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Ingrese el segundo numero y oprima enter");
-                    num2 = Convert.ToInt32(Console.ReadLine());
-
-                    Console.ForegroundColor = ConsoleColor.Green;
-
-                    Console.WriteLine($"\n\n\tEl resultado de la multiplicacion es {num1 * num2}\n");
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Oprima una tecla para continuar");
-                    Console.ReadKey();
-
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-                }
-
-                if (opcion == 4)
-                {
-                    Console.Clear();
-
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-                    Console.WriteLine($"Dividamos dos numeros");
-                    Console.ForegroundColor = ConsoleColor.White;
-
-                    Console.WriteLine($"Ingrese el primer numero y oprima enter");
-                    num1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Ingrese el segundo numero y oprima enter");
-                    num2 = Convert.ToInt32(Console.ReadLine());
-
-                    Console.ForegroundColor = ConsoleColor.Green;
-
-                    Console.WriteLine($"\n\n\tEl resultado de la division es {num1 / num2}\n");
-
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-
-                    Console.WriteLine($"Oprima una tecla para continuar");
-                    Console.ReadKey();
-
-                    Console.ForegroundColor = ConsoleColor.White;
-
-
-
-                }
-                Console.Clear();
-
-
+                Operaciones(opcion);
 
 
             } while (opcion != 0);
             Console.WriteLine($"Adios");
-            Thread.Sleep(3000);
 
 
 
+        }
+
+        /**
+         * <summary>
+         * metodo que se utiliza para ingresar a las operaciones aritmeticas
+         * </summary>
+         * <param name="opcion"> indica a cual operadcion va a entrar de los if</param>
+         */
+        private static void Operaciones(int opcion)
+        {
+            Console.Clear();
+
+            int num1 = 0, num2 = 0;
+
+            if (opcion == 1 || opcion == 2 || opcion == 3 || opcion == 4)
+            {
+                num1 = Ingresarvalor("primer");
+                num2 = Ingresarvalor("segundo");
+            }
+
+
+            if (opcion == 1)
+            {
+                Resultado(Suma(num1, num2), "suma");
+            }
+
+            if (opcion == 2)
+            {
+                Resultado(Resta(num1, num2), "Resta");
+            }
+
+            if (opcion == 3)
+            {
+                Resultado(Multiplicacion(num1, num2), "Multiplicacion");
+            }
+
+            if (opcion == 4)
+            {
+                Resultado(Division(num1, num2), "Division");
+            }
+            
+        }
+
+        private static void Resultado(int resultado, string operacion)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine($"\tEl resultado de la {operacion} es {resultado}\n");
+        }
+
+        /**
+         * <summary>
+         * metodo que suma dos numeros
+         * </summary>
+         * <param name="num1">primer numero</param>
+         * <param name="num2">segundo numero</param>
+         * <returns>devuelve el resultado de la suma</returns>
+         */
+        private static int Suma(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        private static int Resta(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        private static int Multiplicacion(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        private static int Division(int num1, int num2)
+        {
+            return num1 / num2;
+        }
+
+        private static void Titulooperacion(string valor)
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine($"{valor}");
+        }
+
+        private static int Ingresarvalor(string pos)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.WriteLine($"Ingrese el {pos} numero y oprima enter");
+            return Convert.ToInt32(Console.ReadLine());
+
+        }
+
+        static void PresioneContinuar()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine($"Oprima una tecla para continuar");
+            Console.ReadKey();
+            Console.Clear();
+
+
+        }
+
+
+        private static int MenuPrincipal()
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine($"Elija una opcion segun su indice y oprima enter");
+            Console.ForegroundColor = ConsoleColor.White;
+
+
+            Console.WriteLine($"\t1- Sumar dos numeros");
+            Console.WriteLine($"\t2- Restar dos numeros");
+            Console.WriteLine($"\t3- Multiplicar dos numeros");
+            Console.WriteLine($"\t4- Dividir dos numeros");
+
+
+            Console.WriteLine($"\t0- para salir");
+
+            return Convert.ToInt32(Console.ReadLine());
         }
     }
 }

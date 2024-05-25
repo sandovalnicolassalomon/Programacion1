@@ -52,6 +52,8 @@ namespace EjerProgN1P1
         private static void Ejercicio6()
         {
             Console.Clear();
+
+            Utiles.RandomQ();
             char letra;
             string msj;
             msj = "NO ES VOCAL";

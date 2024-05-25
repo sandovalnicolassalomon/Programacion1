@@ -105,6 +105,15 @@ namespace EjerProgN1P1
             return false;
         }
 
+        public static void RandomQ(){
+            for (var i = 0; i < 6; i++)
+            {
+                Random rando = new();
+                Console.WriteLine($"{rando.Next(0,47)}");
+                
+            }
+        }
+
         #region Expresiones Regulares
         [GeneratedRegex(@"^(\-\d|\d)+$")]
         private static partial Regex MyRegexInt();
