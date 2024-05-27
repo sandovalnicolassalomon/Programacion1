@@ -10,3 +10,15 @@ D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\Bubblesort\obj\Debug\net8.
 D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\Bubblesort\obj\Debug\net8.0\refint\Bubblesort.dll
 D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.pdb
 D:\Users\n.sandoval\Documents\ISFTN931B\Programacion1\Bubblesort\obj\Debug\net8.0\ref\Bubblesort.dll
+C:\Programacion1\Bubblesort\bin\Debug\net8.0\Bubblesort.deps.json
+C:\Programacion1\Bubblesort\bin\Debug\net8.0\Bubblesort.dll
+C:\Programacion1\Bubblesort\bin\Debug\net8.0\Bubblesort.pdb
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.AssemblyInfoInputs.cache
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.AssemblyInfo.cs
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.csproj.CoreCompileInputs.cache
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.sourcelink.json
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.dll
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\refint\Bubblesort.dll
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\Bubblesort.pdb
+C:\Programacion1\Bubblesort\obj\Debug\net8.0\ref\Bubblesort.dll
