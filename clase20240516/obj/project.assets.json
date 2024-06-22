@@ -8,8 +8,7 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nicos\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Emiliano\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -17,22 +16,16 @@
       "projectUniqueName": "C:\\Programacion1\\clase20240516\\clase20240516.csproj",
       "projectName": "clase20240516",
       "projectPath": "C:\\Programacion1\\clase20240516\\clase20240516.csproj",
-      "packagesPath": "C:\\Users\\nicos\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
       "outputPath": "C:\\Programacion1\\clase20240516\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nicos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Emiliano\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

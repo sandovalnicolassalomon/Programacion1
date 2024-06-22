@@ -143,7 +143,7 @@
             */
 
             Console.Clear();
-            Tipifica("Bienvenido");
+            Tipifica("Bienvenido a MiniCalculadora");
             int opcion;
             do
             {
@@ -321,12 +321,14 @@
 
         static void Tipifica(string fraseIn)
         {
+            Random random = new();
             char[] frase = fraseIn.ToCharArray();
             ConsolaLetraColorYellow();
             foreach (var item in frase)
             {
                 Console.Write(item);
-                Thread.Sleep(100);
+                Thread.Sleep(random.Next(100, 200));
+
             }
             Console.WriteLine($"");
         }
