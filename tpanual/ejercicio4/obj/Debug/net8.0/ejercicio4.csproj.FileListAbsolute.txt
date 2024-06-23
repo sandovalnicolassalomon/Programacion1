@@ -1,0 +1,15 @@
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/bin/Debug/net8.0/ejercicio4
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/bin/Debug/net8.0/ejercicio4.deps.json
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/bin/Debug/net8.0/ejercicio4.runtimeconfig.json
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/bin/Debug/net8.0/ejercicio4.dll
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/bin/Debug/net8.0/ejercicio4.pdb
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.GeneratedMSBuildEditorConfig.editorconfig
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.AssemblyInfoInputs.cache
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.AssemblyInfo.cs
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.csproj.CoreCompileInputs.cache
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.sourcelink.json
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.dll
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/refint/ejercicio4.dll
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.pdb
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ejercicio4.genruntimeconfig.cache
+/home/nicos/Documentos/Instituto/Programacion1/tpanual/ejercicio4/obj/Debug/net8.0/ref/ejercicio4.dll
