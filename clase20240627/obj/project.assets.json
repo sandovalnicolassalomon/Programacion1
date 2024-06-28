@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programacion1\\tpanual\\ejercicio5\\ejercicio5.csproj",
-      "projectName": "ejercicio5",
-      "projectPath": "C:\\Programacion1\\tpanual\\ejercicio5\\ejercicio5.csproj",
+      "projectUniqueName": "C:\\Programacion1\\clase20240627\\clase20240627.csproj",
+      "projectName": "clase20240627",
+      "projectPath": "C:\\Programacion1\\clase20240627\\clase20240627.csproj",
       "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
-      "outputPath": "C:\\Programacion1\\tpanual\\ejercicio5\\obj\\",
+      "outputPath": "C:\\Programacion1\\clase20240627\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emiliano\\AppData\\Roaming\\NuGet\\NuGet.Config"

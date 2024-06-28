@@ -10,9 +10,9 @@ namespace ejercicio5
             int[] ints2 = CargarArrayUni("2");
 
             Console.Write($"\nResultante: ");
-            for (var i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                for (var j = 0; j < 5; j++)
+                for (int j = 0; j < 5; j++)
                 {
                     ints1[i] *= ints2[j];
                 }
@@ -26,12 +26,13 @@ namespace ejercicio5
             Random random = new();
             Console.Write($"\nArray {nombre}: ");
 
-            for (var i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 ints[i] = random.Next(1, 10);
                 Console.Write($"{ints[i]} ");
 
             }
+            
             Console.WriteLine($"");
             return ints;
         }

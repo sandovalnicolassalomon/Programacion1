@@ -1,0 +1,15 @@
+C:\Programacion1\clase20240627\bin\Debug\net8.0\clase20240627.exe
+C:\Programacion1\clase20240627\bin\Debug\net8.0\clase20240627.deps.json
+C:\Programacion1\clase20240627\bin\Debug\net8.0\clase20240627.runtimeconfig.json
+C:\Programacion1\clase20240627\bin\Debug\net8.0\clase20240627.dll
+C:\Programacion1\clase20240627\bin\Debug\net8.0\clase20240627.pdb
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.AssemblyInfoInputs.cache
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.AssemblyInfo.cs
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.csproj.CoreCompileInputs.cache
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.sourcelink.json
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.dll
+C:\Programacion1\clase20240627\obj\Debug\net8.0\refint\clase20240627.dll
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.pdb
+C:\Programacion1\clase20240627\obj\Debug\net8.0\clase20240627.genruntimeconfig.cache
+C:\Programacion1\clase20240627\obj\Debug\net8.0\ref\clase20240627.dll
