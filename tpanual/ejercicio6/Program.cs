@@ -4,14 +4,30 @@ namespace ejercicio6
 {
     static class Program
     {
+        private static int acumulador = 0;
         private static void Main(string[] args)
         {
-            int[,] personas = new int[5, 3];
-            // este es un comentario
-            for (var i = 0; i < 5; i++)
-            {
-                Console.WriteLine($"{i}");
-            }
+            
+            
+            
+            Parallel.For(0, 100, dato =>{
+                Console.WriteLine($"acumulador: '{acumulador}'. Tarea del hilo '{Environment.CurrentManagedThreadId}' ");
+
+                if (acumulador % 2 == 0)
+                {
+                    acumulador += dato;
+                    Thread.Sleep(100);
+                }
+                else
+                {
+                    acumulador -= dato;
+                    Thread.Sleep(100);
+                }
+            });
+           
+            
+
         }
+
     }
 }

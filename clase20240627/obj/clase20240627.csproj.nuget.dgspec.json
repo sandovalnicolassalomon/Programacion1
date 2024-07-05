@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacion1\\clase20240627\\clase20240627.csproj": {}
+    "/home/nicos/Documentos/Instituto/Programacion1/clase20240627/clase20240627.csproj": {}
   },
   "projects": {
-    "C:\\Programacion1\\clase20240627\\clase20240627.csproj": {
+    "/home/nicos/Documentos/Instituto/Programacion1/clase20240627/clase20240627.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacion1\\clase20240627\\clase20240627.csproj",
+        "projectUniqueName": "/home/nicos/Documentos/Instituto/Programacion1/clase20240627/clase20240627.csproj",
         "projectName": "clase20240627",
-        "projectPath": "C:\\Programacion1\\clase20240627\\clase20240627.csproj",
-        "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacion1\\clase20240627\\obj\\",
+        "projectPath": "/home/nicos/Documentos/Instituto/Programacion1/clase20240627/clase20240627.csproj",
+        "packagesPath": "/home/nicos/.nuget/packages/",
+        "outputPath": "/home/nicos/Documentos/Instituto/Programacion1/clase20240627/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Emiliano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/nicos/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
