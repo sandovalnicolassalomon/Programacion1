@@ -26,6 +26,8 @@ namespace ejercicio3
                 }
                 Console.WriteLine($"");
             }
+            Console.ReadKey();
+
         }
     }
 }

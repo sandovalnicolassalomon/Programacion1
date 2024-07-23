@@ -23,6 +23,8 @@ namespace ejercicio2
                 Console.WriteLine($"= {suma}");
                 suma = 0;
             }
+            Console.ReadKey();
+
         }
     }
 }

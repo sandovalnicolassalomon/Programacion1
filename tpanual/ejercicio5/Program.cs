@@ -19,6 +19,8 @@ namespace ejercicio5
                 Console.Write($"{ints1[i]} ");
             }
             Console.WriteLine($"");
+            Console.ReadKey();
+
         }
 
         static int[] CargarArrayUni(string nombre){

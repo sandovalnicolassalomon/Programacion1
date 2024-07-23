@@ -25,7 +25,7 @@ namespace ejercicio1
             }
             Console.WriteLine($"La suma de todo los valores de la matriz es: {suma}");
 
-
+            Console.ReadKey();
         }
 
 
