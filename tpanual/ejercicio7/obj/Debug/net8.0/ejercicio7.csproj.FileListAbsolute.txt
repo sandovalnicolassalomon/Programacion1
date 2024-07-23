@@ -1,0 +1,15 @@
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\bin\Debug\net8.0\ejercicio7.exe
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\bin\Debug\net8.0\ejercicio7.deps.json
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\bin\Debug\net8.0\ejercicio7.runtimeconfig.json
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\bin\Debug\net8.0\ejercicio7.dll
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\bin\Debug\net8.0\ejercicio7.pdb
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.GeneratedMSBuildEditorConfig.editorconfig
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.AssemblyInfoInputs.cache
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.AssemblyInfo.cs
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.csproj.CoreCompileInputs.cache
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.sourcelink.json
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.dll
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\refint\ejercicio7.dll
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.pdb
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ejercicio7.genruntimeconfig.cache
+E:\cshaprepos\Programacion1\tpanual\ejercicio7\obj\Debug\net8.0\ref\ejercicio7.dll

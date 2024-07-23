@@ -184,14 +184,6 @@ namespace ejercicio6
             return " ";
         }
 
-        static void PresioneContinuar()
-        {
-            ConsolaLetraColorGray();
-            Console.WriteLine($"Oprima una tecla para continuar");
-            Console.ReadKey();
-            Console.Clear();
-        }
-
         static void OpcionInvalida(string frase)
         {
             Console.Clear();
