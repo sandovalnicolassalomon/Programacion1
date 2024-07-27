@@ -6,8 +6,6 @@ namespace ejercicio1
     {
         private static void Main(string[] args)
         {
-            
-
             int[,] matriz = new int[4, 4];
             int suma = 0;
 
@@ -17,17 +15,14 @@ namespace ejercicio1
             {
                 for (var j = 0; j < 4; j++)
                 {
-                    matriz[i, j] = random.Next(2, 6);
-                Console.Write($"{matriz[i,j]} ");
+                    matriz[i, j] = random.Next(1, 7);
+                    Console.Write($"{matriz[i, j]} ");
                     suma += matriz[i, j];
                 }
                 Console.WriteLine($"");
             }
             Console.WriteLine($"La suma de todo los valores de la matriz es: {suma}");
-
             Console.ReadKey();
         }
-
-
     }
 }

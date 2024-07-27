@@ -32,8 +32,6 @@ namespace ejercicio4
             }
             Console.WriteLine($"");
             Console.ReadKey();
-
-
         }
     }
 }

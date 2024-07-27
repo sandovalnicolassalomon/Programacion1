@@ -1,0 +1,353 @@
+
+24/7/2024 15:26:23
+Tiro 1:  1  2  5  6  6 
+Tiro 2:  2  2  2  2  2 
+Tiro 3:  6  1  5  2  1 
+Tiro 4:  2  6  6  4  6 
+Tiro 5:  4  5  2  1  3 
+1 = 4 veces2 = 9 veces3 = 1 veces4 = 2 veces5 = 3 veces6 = 6 veces
+
+24/7/2024 15:26:36
+Tiro 1:  4  4  1  6  3 
+Tiro 2:  1  1  5  3  1 
+Tiro 3:  1  1  6  5  5 
+Tiro 4:  2  2  3  4  5 
+Tiro 5:  2  3  6  2  5 
+1 = 6 veces2 = 4 veces3 = 4 veces4 = 3 veces5 = 5 veces6 = 3 veces
+
+24/7/2024 15:27:15
+Tiro 1:  5  2  4  6  1 
+Tiro 2:  5  2  4  6  4 
+Tiro 3:  2  2  4  1  4 
+Tiro 4:  6  2  5  3  6 
+Tiro 5:  3  1  1  5  6 
+1 = 4 veces2 = 5 veces3 = 2 veces4 = 5 veces5 = 4 veces6 = 5 veces
+
+24/7/2024 15:27:29
+Tiro 1:  4  1  1  3  2 
+Tiro 2:  1  3  5  4  2 
+Tiro 3:  1  2  3  4  1 
+Tiro 4:  5  1  5  4  6 
+Tiro 5:  1  6  5  4  5 
+1 = 7 veces2 = 3 veces3 = 3 veces4 = 5 veces5 = 5 veces6 = 2 veces
+
+24/7/2024 15:27:42
+Tiro 1:  4  2  6  3  6 
+Tiro 2:  2  3  5  2  3 
+Tiro 3:  4  3  4  3  5 
+Tiro 4:  5  6  1  3  1 
+Tiro 5:  5  3  2  4  1 
+1 = 3 veces2 = 4 veces3 = 7 veces4 = 4 veces5 = 4 veces6 = 3 veces
+
+24/7/2024 15:28:12
+Tiro 1:  3  4  2  1  1 
+Tiro 2:  1  4  4  6  1 
+Tiro 3:  4  2  2  1  6 
+Tiro 4:  5  3  4  6  3 
+Tiro 5:  3  6  1  4  2 
+
+1 = 6 veces
+2 = 4 veces
+3 = 4 veces
+4 = 6 veces
+5 = 1 veces
+6 = 4 veces
+
+24/7/2024 15:28:31
+Tiro 1:  6  4  1  6  5 
+Tiro 2:  1  2  2  3  1 
+Tiro 3:  4  2  5  6  1 
+Tiro 4:  1  4  2  2  3 
+Tiro 5:  2  1  2  1  1 
+
+1 = 8 veces
+2 = 7 veces
+3 = 2 veces
+4 = 3 veces
+5 = 2 veces
+6 = 3 veces
+
+***
+24/7/2024 15:30:03
+Tiro 1:  1  6  6  6  5 
+Tiro 2:  4  6  1  5  6 
+Tiro 3:  1  5  5  1  4 
+Tiro 4:  3  4  6  4  5 
+Tiro 5:  1  3  3  1  5 
+
+1 = 6 veces
+2 = 0 veces
+3 = 3 veces
+4 = 4 veces
+5 = 6 veces
+6 = 6 veces
+
+***
+24/7/2024 15:30:05
+Tiro 1:  5  6  5  2  6 
+Tiro 2:  4  6  5  4  6 
+Tiro 3:  2  2  1  4  3 
+Tiro 4:  5  2  3  1  4 
+Tiro 5:  6  5  4  6  4 
+
+1 = 2 veces
+2 = 4 veces
+3 = 2 veces
+4 = 6 veces
+5 = 5 veces
+6 = 6 veces
+
+***
+24/7/2024 15:30:08
+Tiro 1:  2  1  6  4  6 
+Tiro 2:  4  2  2  4  1 
+Tiro 3:  2  3  3  6  2 
+Tiro 4:  5  3  2  2  3 
+Tiro 5:  4  1  1  4  1 
+
+1 = 5 veces
+2 = 7 veces
+3 = 4 veces
+4 = 5 veces
+5 = 1 veces
+6 = 3 veces
+
+***
+24/7/2024 15:30:10
+Tiro 1:  6  4  4  3  2 
+Tiro 2:  1  3  4  5  5 
+Tiro 3:  3  3  1  6  3 
+Tiro 4:  3  1  4  3  6 
+Tiro 5:  6  4  6  1  3 
+
+1 = 4 veces
+2 = 1 veces
+3 = 8 veces
+4 = 5 veces
+5 = 2 veces
+6 = 5 veces
+
+***
+24/7/2024 15:30:12
+Tiro 1:  2  6  6  4  4 
+Tiro 2:  6  3  2  6  5 
+Tiro 3:  6  4  3  5  3 
+Tiro 4:  3  6  6  5  5 
+Tiro 5:  3  4  4  5  2 
+
+1 = 0 veces
+2 = 3 veces
+3 = 5 veces
+4 = 5 veces
+5 = 5 veces
+6 = 7 veces
+
+***
+24/7/2024 15:30:13
+Tiro 1:  6  4  1  2  5 
+Tiro 2:  4  6  6  5  2 
+Tiro 3:  6  2  2  1  1 
+Tiro 4:  3  2  1  1  3 
+Tiro 5:  2  6  3  6  1 
+
+1 = 6 veces
+2 = 6 veces
+3 = 3 veces
+4 = 2 veces
+5 = 2 veces
+6 = 6 veces
+
+***
+24/7/2024 15:30:14
+Tiro 1:  1  4  5  5  2 
+Tiro 2:  5  3  3  3  5 
+Tiro 3:  6  1  1  3  1 
+Tiro 4:  5  2  4  1  2 
+Tiro 5:  6  4  5  4  3 
+
+1 = 5 veces
+2 = 3 veces
+3 = 5 veces
+4 = 4 veces
+5 = 6 veces
+6 = 2 veces
+
+***
+24/7/2024 15:30:21
+Tiro 1:  3  3  6  3  3 
+Tiro 2:  2  4  2  4  4 
+Tiro 3:  4  1  1  4  5 
+Tiro 4:  4  5  4  3  3 
+Tiro 5:  1  5  2  6  6 
+
+1 = 3 veces
+2 = 3 veces
+3 = 6 veces
+4 = 7 veces
+5 = 3 veces
+6 = 3 veces
+
+***
+24/7/2024 17:28:06
+Tiro 1:  4  5  6  6  1 
+Tiro 2:  1  3  6  4  1 
+Tiro 3:  1  2  3  5  4 
+Tiro 4:  5  2  1  6  1 
+Tiro 5:  4  6  5  4  1 
+
+1 = 7 veces
+2 = 2 veces
+3 = 2 veces
+4 = 5 veces
+5 = 4 veces
+6 = 5 veces
+
+***
+24/7/2024 17:28:11
+Tiro 1:  6  5  4  2  3 
+Tiro 2:  2  6  6  6  4 
+Tiro 3:  1  6  2  3  4 
+Tiro 4:  1  5  5  2  4 
+Tiro 5:  3  6  3  4  3 
+
+1 = 2 veces
+2 = 4 veces
+3 = 5 veces
+4 = 5 veces
+5 = 3 veces
+6 = 6 veces
+
+***
+24/7/2024 17:28:26
+Tiro 1:  2  4  3  4  2 
+Tiro 2:  3  5  2  2  1 
+Tiro 3:  3  6  1  6  3 
+Tiro 4:  4  1  6  4  5 
+Tiro 5:  2  4  4  4  4 
+
+1 = 3 veces
+2 = 5 veces
+3 = 4 veces
+4 = 8 veces
+5 = 2 veces
+6 = 3 veces
+
+***
+24/7/2024 17:28:52
+Tiro 1:  3  3  2  3  2 
+Tiro 2:  6  2  1  5  6 
+Tiro 3:  3  6  1  3  1 
+Tiro 4:  2  3  2  1  1 
+Tiro 5:  1  6  4  4  4 
+
+1 = 6 veces
+2 = 5 veces
+3 = 6 veces
+4 = 3 veces
+5 = 1 veces
+6 = 4 veces
+
+***
+24/7/2024 17:29:04
+Tiro 1:  5  5  6  6  2 
+Tiro 2:  1  4  2  2  5 
+Tiro 3:  2  3  5  4  4 
+Tiro 4:  2  4  2  3  2 
+Tiro 5:  4  1  1  1  2 
+
+1 = 4 veces
+2 = 8 veces
+3 = 2 veces
+4 = 5 veces
+5 = 4 veces
+6 = 2 veces
+
+***
+24/7/2024 17:54:40
+Tiro 1:  1  5  6  3  6 
+Tiro 2:  3  2  4  5  5 
+Tiro 3:  6  2  5  2  5 
+Tiro 4:  6  3  4  3  1 
+Tiro 5:  4  6  2  6  1 
+
+1 = 3 veces
+2 = 4 veces
+3 = 4 veces
+4 = 3 veces
+5 = 5 veces
+6 = 6 veces
+
+***
+24/7/2024 17:54:43
+Tiro 1:  1  1  4  4  6 
+Tiro 2:  1  6  6  5  4 
+Tiro 3:  2  1  6  4  4 
+Tiro 4:  2  6  5  3  6 
+Tiro 5:  6  2  5  3  6 
+
+1 = 4 veces
+2 = 3 veces
+3 = 2 veces
+4 = 5 veces
+5 = 3 veces
+6 = 8 veces
+
+***
+24/7/2024 18:07:06
+Tiro 1:  5  3  4  5  3 
+Tiro 2:  1  5  4  6  4 
+Tiro 3:  2  5  3  3  4 
+Tiro 4:  6  5  5  1  5 
+Tiro 5:  3  6  3  1  3 
+
+1 = 3 veces
+2 = 1 veces
+3 = 7 veces
+4 = 4 veces
+5 = 7 veces
+6 = 3 veces
+
+***
+24/7/2024 18:07:14
+Tiro 1:  3  5  4  2  1 
+Tiro 2:  1  2  6  2  2 
+Tiro 3:  4  4  2  3  4 
+Tiro 4:  3  5  6  6  6 
+Tiro 5:  1  1  2  4  4 
+
+1 = 4 veces
+2 = 6 veces
+3 = 3 veces
+4 = 6 veces
+5 = 2 veces
+6 = 4 veces
+
+***
+24/7/2024 18:07:21
+Tiro 1:  6  3  5  3  4 
+Tiro 2:  3  3  2  1  1 
+Tiro 3:  4  5  6  6  5 
+Tiro 4:  2  5  3  5  1 
+Tiro 5:  1  4  2  3  3 
+
+1 = 4 veces
+2 = 3 veces
+3 = 7 veces
+4 = 3 veces
+5 = 5 veces
+6 = 3 veces
+
+***
+26/7/2024 14:24:08
+Tiro 1:  5  1  2  5  1 
+Tiro 2:  5  5  1  4  1 
+Tiro 3:  6  2  5  1  2 
+Tiro 4:  5  3  3  3  6 
+Tiro 5:  5  3  2  5  3 
+
+1 = 5 veces
+2 = 4 veces
+3 = 5 veces
+4 = 1 veces
+5 = 8 veces
+6 = 2 veces

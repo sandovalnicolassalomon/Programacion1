@@ -9,11 +9,7 @@ namespace ejercicio6
         private static string[,] personas = new string[5, 3];
         private static void Main(string[] args)
         {
-
-
             App();
-
-
         }
 
         public static void MenuPrincipal()
@@ -29,7 +25,6 @@ namespace ejercicio6
 
         public static void App()
         {
-
             string opcion = "";
             do
             {
@@ -43,11 +38,8 @@ namespace ejercicio6
         public static void SeleccionOpcion(string opcion)
         {
             Console.Clear();
-
-
             switch (opcion)
             {
-
                 case "1":
                     IngresarPersonas();
                     break;
@@ -60,9 +52,6 @@ namespace ejercicio6
                 default:
                     OpcionInvalida("Opcion Invalida");
                     break;
-
-
-
             }
         }
 
@@ -72,26 +61,20 @@ namespace ejercicio6
             ConsolaLetraColorGray();
             Ordenamiento();
             for (int i = 0; i < 5; i++)
-            {
-
-                Console.WriteLine($"{i+1}) {personas[i, 1]}, {personas[i, 0]} {personas[i, 2]}");
-
-            }
-
+                Console.WriteLine($"{i + 1}) {personas[i, 1]}, {personas[i, 0]} {personas[i, 2]}");
         }
 
         public static void Ordenamiento()
         {
             for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j < 5-i-1; j++)
+                for (int j = 0; j < 5 - i - 1; j++)
                 {
-                    if (Convert.ToInt32(personas[j, 2] ) > Convert.ToInt32(personas[j + 1, 2]))
+                    if (Convert.ToInt32(personas[j, 2]) > Convert.ToInt32(personas[j + 1, 2]))
                     {
-                        (personas[j+1, 2], personas[j , 2]) = (personas[j, 2], personas[j +1, 2]);
-                        (personas[j+1, 1], personas[j , 1]) = (personas[j, 1], personas[j +1, 1]);
-                        (personas[j+1, 0], personas[j , 0]) = (personas[j, 0], personas[j +1, 0]);
-
+                        (personas[j + 1, 2], personas[j, 2]) = (personas[j, 2], personas[j + 1, 2]);
+                        (personas[j + 1, 1], personas[j, 1]) = (personas[j, 1], personas[j + 1, 1]);
+                        (personas[j + 1, 0], personas[j, 0]) = (personas[j, 0], personas[j + 1, 0]);
                     }
                 }
             }
@@ -108,12 +91,8 @@ namespace ejercicio6
                 temp[0] = IngresoPalabra("Nombre", f + 1) ?? " ";
                 if (temp[0] == " ") return;
 
-
-
                 temp[1] = IngresoPalabra("Apellido", f + 1) ?? " ";
                 if (temp[1] == " ") return;
-
-
 
                 temp[2] = IngresoEdad(f + 1) ?? " ";
                 if (temp[2] == " ") return;
@@ -123,9 +102,6 @@ namespace ejercicio6
                     personas[f, c] = temp[c];
                 }
             }
-
-
-
         }
 
         public static string? IngresoPalabra(string titulo, int f)
@@ -145,6 +121,7 @@ namespace ejercicio6
                 {
                     OpcionInvalida($"Ingreso Invalido {++fails}");
                 }
+
                 if (fails == 3)
                 {
                     OpcionInvalida("Demasiados intentos fallidos");
@@ -153,15 +130,11 @@ namespace ejercicio6
             } while (fails < 3);
             return null;
         }
-
-
-
         public static string IngresoEdad(int f)
         {
             int fails = 0;
             do
             {
-
                 ConsolaLetraColorYellow();
                 Console.Write($"\nIngrese la Edad N°{f}: ");
                 ConsolaLetraColorWhite();
@@ -204,7 +177,6 @@ namespace ejercicio6
         {
             ConsolaLetraColorMagenta();
             Console.WriteLine(fraseIn);
-
         }
 
     }
