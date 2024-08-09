@@ -9,10 +9,8 @@ static class Program
     private static int jugadorDos = 0;
     private static bool turno = true;
     private static int jagadas = 0;
-
     private static bool ganador = false;
-    delegate void MiLetraColor(char pos);
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
 
         App();
@@ -67,7 +65,7 @@ static class Program
         }
     }
 
-    private static void Juego()
+    public static void Juego()
     {
         do
         {
@@ -80,8 +78,8 @@ static class Program
             string eleccion = EleccionPosicion();
             if (eleccion == "0")
             {
-
                 Console.Clear();
+                Tateti();
                 Console.WriteLine($"Te rendiste...");
                 ElGanador();
                 TableroGanador();
@@ -122,7 +120,7 @@ static class Program
         return false;
     }
 
-    private static void MostrarGanador()
+    public static void MostrarGanador()
     {
         Console.Clear();
         Tateti();
@@ -134,39 +132,40 @@ static class Program
 
     public static void PressTecla()
     {
-        Console.WriteLine($"Presiona una tecla para continuar");
+        Console.WriteLine($"\nPresiona una tecla para continuar");
         Console.ReadKey();
     }
 
     public static void ElGanador()
     {
+        string frase = "El ganador es el jugador ";
         if (!turno)
         {
             ConsolaLetraColorGreen();
-            Console.WriteLine("El ganador es el jugador Uno X");
+            frase += "UNO X";
             jugadorUno++;
+
         }
         else
         {
             ConsolaLetraColorCyan();
-            Console.WriteLine("El ganador es el jugador Dos O");
+            frase += "DOS O";
+
             jugadorDos++;
 
         }
+        Console.WriteLine(frase);
+
+        EscribirTxt(frase);
     }
 
-    private static bool Ganador()
+    public static bool Ganador() => GanadorH() || GanadorV() || GanadorD();
+
+    public static bool GanadorD()
     {
-        for (int i = 0; i < 3; i++)
-            if (posiciones[i, 0] == posiciones[i, 1] && posiciones[i, 0] == posiciones[i, 2])
-                return true;
-
-        for (int i = 0; i < 3; i++)
-            if (posiciones[0, i] == posiciones[1, i] && posiciones[0, i] == posiciones[2, i])
-                return true;
-
         if (posiciones[0, 0] == posiciones[1, 1] && posiciones[0, 0] == posiciones[2, 2])
             return true;
+
 
         if (posiciones[2, 0] == posiciones[1, 1] && posiciones[2, 0] == posiciones[0, 2])
             return true;
@@ -174,7 +173,28 @@ static class Program
         return false;
     }
 
-    private static bool MarcarPosicion(string eleccion)
+    public static bool GanadorV()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (posiciones[0, i] == posiciones[1, i] && posiciones[0, i] == posiciones[2, i])
+                return true;
+        }
+        return false;
+    }
+
+    public static bool GanadorH()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (posiciones[i, 0] == posiciones[i, 1] && posiciones[i, 0] == posiciones[i, 2])
+                return true;
+
+        }
+        return false;
+    }
+
+    public static bool MarcarPosicion(string eleccion)
     {
         if (Regex.IsMatch(eleccion, @"^\d$"))
         {
@@ -187,13 +207,11 @@ static class Program
             }
             else
             {
-                fails++;
                 OpcionInvalida($"Opcion Invalida {fails}");
             }
         }
         else
         {
-            fails++;
             OpcionInvalida($"Opcion Invalida {fails}");
         }
         return false;
@@ -207,11 +225,10 @@ static class Program
             MostrarJuagador("Dos O");
     }
 
-
     public static string EleccionPosicion()
     {
         ConsolaLetraColorWhite();
-        Console.WriteLine($"Elija la posicion del tablero disponible y oprima enter");
+        Console.WriteLine($"\nElija la posicion del tablero disponible y oprima enter");
         ConsolaLetraColorYellow();
         Console.WriteLine("Presione 0 para Rendirse");
         return Console.ReadLine() ?? " ";
@@ -251,130 +268,103 @@ static class Program
         }
     }
 
-
     public static void Tablero()
     {
-
-
         ConsolaLetraColorWhite();
-        Console.WriteLine($"\n\t\t{posiciones[0, 0]} | {posiciones[0, 1]} | {posiciones[0, 2]}");
-        Console.WriteLine($"\t\t---------");
-        Console.WriteLine($"\t\t{posiciones[1, 0]} | {posiciones[1, 1]} | {posiciones[1, 2]}");
-        Console.WriteLine($"\t\t---------");
-        Console.WriteLine($"\t\t{posiciones[2, 0]} | {posiciones[2, 1]} | {posiciones[2, 2]}\n");
+        Console.WriteLine($"");
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine($"\t\t       {posiciones[i, 0]} | {posiciones[i, 1]} | {posiciones[i, 2]}");
+            if (i < 2)
+                Console.WriteLine($"\t\t       ---------");
+        }
     }
 
+    public static void LetraColor(char pos)
+    {
+        if (ganador && !turno && pos == 'X')
+            ConsolaLetraColorGreen();
+        else if (ganador && turno && pos == 'O')
+            ConsolaLetraColorCyan();
+        else
+            ConsolaLetraColorWhite();
+
+    }
     public static void TableroGanador()
     {
-        MiLetraColor Color = new((pos) =>
+        Console.WriteLine($"\n");
+        for (int i = 0; i < 3; i++)
         {
-            if (ganador && !turno && pos == 'X')
-                ConsolaLetraColorGreen();
-            else if (ganador && turno && pos == 'O')
-                ConsolaLetraColorCyan();
-            else
+            Console.Write($"\t\t       ");
+            for (int j = 0; j < 3; j++)
+            {
+                LetraColor(posiciones[i, j]);
+                Console.Write($"{posiciones[i, j]} ");
+
+                if (j < 2)
+                {
+                    ConsolaLetraColorWhite();
+                    Console.Write("| ");
+                }
+            }
+            if (i < 2)
+            {
                 ConsolaLetraColorWhite();
-        });
-
-        ConsolaLetraColorWhite();
-        Color(posiciones[0, 0]);
-        Console.Write($"\n\t\t{posiciones[0, 0]} ");
-        ConsolaLetraColorWhite();
-        Console.Write("| ");
-        Color(posiciones[0, 1]);
-
-        Console.Write($"{posiciones[0, 1]} ");
-        ConsolaLetraColorWhite();
-
-        Console.Write("| ");
-        Color(posiciones[0, 2]);
-
-        Console.WriteLine($"{posiciones[0, 2]}");
-        ConsolaLetraColorWhite();
-
-        Console.Write($"\t\t---------");
-        Color(posiciones[1, 0]);
-
-        Console.Write($"\n\t\t{posiciones[1, 0]} ");
-        ConsolaLetraColorWhite();
-
-        Console.Write("| ");
-        Color(posiciones[1, 1]);
-
-        Console.Write($"{posiciones[1, 1]} ");
-        ConsolaLetraColorWhite();
-
-        Console.Write("| ");
-        Color(posiciones[1, 2]);
-
-        Console.WriteLine($"{posiciones[1, 2]}");
-        ConsolaLetraColorWhite();
-
-        Console.Write($"\t\t---------");
-        Color(posiciones[2, 0]);
-
-        Console.Write($"\n\t\t{posiciones[2, 0]} ");
-        ConsolaLetraColorWhite();
-
-        Console.Write("| ");
-        Color(posiciones[2, 1]);
-
-        Console.Write($"{posiciones[2, 1]} ");
-        ConsolaLetraColorWhite();
-
-        Console.Write("| ");
-        Color(posiciones[2, 2]);
-
-        Console.WriteLine($"{posiciones[2, 2]}\n");
+                Console.WriteLine($"\n\t\t       ---------");
+            }
+        }
+        Console.WriteLine("");
     }
 
     public static void Tateti()
     {
+        string[] tateti = [ "  _____  _           _____ _____         _____ ___ " ,
+                            " |_   _|/ \\         |_   _| ____|       |_   _|_ _|" ,
+                            "   | | / _ \\   ____   | | |  _|    ____   | |  | | " ,
+                            "   | |/ ___ \\ |____|  | | | |___  |____|  | |  | | " ,
+                            "   |_/_/   \\_\\        |_| |_____|         |_| |___|\n" ];
 
-        ColorTateti();
-        Console.WriteLine("  _____  _         _____ _____       _____ ___ ");
-        Console.WriteLine(" |_   _|/ \\       |_   _| ____|     |_   _|_ _|");
-        Console.WriteLine("   | | / _ \\   __   | | |  _|    __   | |  | | ");
-        Console.WriteLine("   | |/ ___ \\ |__|  | | | |___  |__|  | |  | | ");
-        Console.WriteLine("   |_/_/   \\_\\      |_| |_____|       |_| |___|\n");
-
-
+        ColorRandom();
+        foreach (var item in tateti)
+        {
+            Console.WriteLine(item);
+        }
     }
 
     public static void MostrarPuntaje()
     {
         ConsolaLetraColorYellow();
-        Console.WriteLine($"\t\t PUNTAJE");
+        Console.WriteLine($"\t\t\tPUNTAJE");
         ConsolaLetraColorGreen();
-        Console.Write($"Jugador Uno X: {jugadorUno}");
+        Console.Write($"  \"Jugador Uno X\": {jugadorUno}");
         ConsolaLetraColorCyan();
-        Console.WriteLine($"\t Jugador Dos O: {jugadorDos}");
+        Console.WriteLine($"\t\t  \"Jugador Dos O\": {jugadorDos}");
     }
-
 
     public static void MostrarJuagador(string jugador)
     {
         Console.ForegroundColor = turno ? ConsoleColor.Green : ConsoleColor.Cyan;
-        Console.WriteLine($"Turno de jugador {jugador}".ToUpper());
+        Console.WriteLine($"\nTurno de jugador {jugador}".ToUpper());
     }
 
-
-
-    static void OpcionInvalida(string frase)
+    public static void OpcionInvalida(string frase)
     {
+        fails++;
         Console.Clear();
         Tateti();
         ConsolaLetraColorRed();
         Console.WriteLine($"{frase}\n Presione una tecla para continuar");
         Console.ReadKey(true);
     }
+
     public static void ResetPuntaje()
     {
         jugadorDos = 0;
         jugadorUno = 0;
     }
 
-    public static void ColorTateti()
+    public static void ColorRandom()
     {
         Random random = new();
         switch (random.Next(0, 5))
@@ -400,10 +390,18 @@ static class Program
         }
     }
 
-    static void ConsolaLetraColorGreen() => Console.ForegroundColor = ConsoleColor.Green;
-    static void ConsolaLetraColorCyan() => Console.ForegroundColor = ConsoleColor.Cyan;
-    static void ConsolaLetraColorRed() => Console.ForegroundColor = ConsoleColor.Red;
-    static void ConsolaLetraColorMagenta() => Console.ForegroundColor = ConsoleColor.Magenta;
-    static void ConsolaLetraColorYellow() => Console.ForegroundColor = ConsoleColor.Yellow;
-    static void ConsolaLetraColorWhite() => Console.ForegroundColor = ConsoleColor.White;
+    public static void ConsolaLetraColorGreen() => Console.ForegroundColor = ConsoleColor.Green;
+    public static void ConsolaLetraColorCyan() => Console.ForegroundColor = ConsoleColor.Cyan;
+    public static void ConsolaLetraColorRed() => Console.ForegroundColor = ConsoleColor.Red;
+    public static void ConsolaLetraColorMagenta() => Console.ForegroundColor = ConsoleColor.Magenta;
+    public static void ConsolaLetraColorYellow() => Console.ForegroundColor = ConsoleColor.Yellow;
+    public static void ConsolaLetraColorWhite() => Console.ForegroundColor = ConsoleColor.White;
+
+    public static void EscribirTxt(string frase)
+    {
+        using StreamWriter st = new("historial.txt", true);
+        st.WriteLine($"\n {DateTime.Now} \n {frase}");
+        st.Flush();
+        st.Close();
+    }
 }
