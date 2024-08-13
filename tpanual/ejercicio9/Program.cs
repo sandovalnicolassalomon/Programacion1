@@ -12,7 +12,6 @@ static class Program
     private static bool ganador = false;
     public static void Main(string[] args)
     {
-
         App();
     }
 
@@ -28,6 +27,7 @@ static class Program
             Tablero();
             MenuPrincipal();
             opcion = Console.ReadLine() ?? "";
+            Console.Beep();
             SeleccionOpcion(opcion);
         } while (opcion != "0");
     }
@@ -76,6 +76,7 @@ static class Program
             TurnoJugador();
 
             string eleccion = EleccionPosicion();
+            Console.Beep();
             if (eleccion == "0")
             {
                 Console.Clear();
