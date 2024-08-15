@@ -1,5 +1,6 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+using System.Xml;
+using System.Xml.Serialization;
 namespace ejercicio9;
 static class Program
 {
@@ -20,16 +21,64 @@ static class Program
         string opcion;
         do
         {
-            Console.Clear();
             CargarPosiciones();
-            Tateti();
-            MostrarPuntaje();
-            Tablero();
+            VistaNormal();
             MenuPrincipal();
             opcion = Console.ReadLine() ?? "";
             Console.Beep();
             SeleccionOpcion(opcion);
         } while (opcion != "0");
+    }
+
+    public static void CargarPosiciones()
+    {
+        jagadas = 0;
+        int pos = 49;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+                posiciones[i, j] = (char)(j + pos);
+
+            pos += 3;
+        }
+    }
+
+    public static void CartelTateti()
+    {
+        string[] tateti = [ "  _____  _           _____ _____         _____ ___ " ,
+                            " |_   _|/ \\         |_   _| ____|       |_   _|_ _|" ,
+                            "   | | / _ \\   ____   | | |  _|    ____   | |  | | " ,
+                            "   | |/ ___ \\ |____|  | | | |___  |____|  | |  | | " ,
+                            "   |_/_/   \\_\\        |_| |_____|         |_| |___|\n" ];
+
+        ColorRandom();
+        foreach (var item in tateti)
+        {
+            Console.WriteLine(item);
+        }
+    }
+
+    public static void MostrarPuntaje()
+    {
+        ConsolaLetraColorYellow();
+        Console.WriteLine($"\t\t\tPUNTAJE");
+        ConsolaLetraColorGreen();
+        Console.Write($"  \"Jugador Uno X\": {jugadorUno}");
+        ConsolaLetraColorCyan();
+        Console.WriteLine($"\t\t  \"Jugador Dos O\": {jugadorDos}");
+    }
+
+    public static void Tablero()
+    {
+        ConsolaLetraColorWhite();
+        Console.WriteLine($"");
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine($"\t\t       {posiciones[i, 0]} | {posiciones[i, 1]} | {posiciones[i, 2]}");
+            if (i < 2)
+                Console.WriteLine($"\t\t       ---------");
+        }
     }
     public static void MenuPrincipal()
     {
@@ -69,10 +118,7 @@ static class Program
     {
         do
         {
-            Console.Clear();
-            Tateti();
-            MostrarPuntaje();
-            Tablero();
+            VistaNormal();
             TurnoJugador();
 
             string eleccion = EleccionPosicion();
@@ -80,8 +126,8 @@ static class Program
             if (eleccion == "0")
             {
                 Console.Clear();
-                Tateti();
-                Console.WriteLine($"Te rendiste...");
+                CartelTateti();
+                TeRendiste();
                 ElGanador();
                 TableroGanador();
                 PressTecla();
@@ -106,15 +152,24 @@ static class Program
         ganador = false;
     }
 
+    public static void TeRendiste()
+    {
+        if (turno)
+            Console.WriteLine($"Jugador UNO X Te rendiste...");
+        else
+            Console.WriteLine($"Jugador DOS O Te rendiste...");
+
+    }
+
     public static bool Empate(bool ganador)
     {
         if (jagadas == 9 && !ganador)
         {
             Console.Clear();
-            Tateti();
+            CartelTateti();
             ConsolaLetraColorRed();
-            Console.WriteLine($"\t\t  EMPATE");
-            Tablero();
+            Console.WriteLine($"\t\t\tEMPATE");
+            TableroGanador();
             PressTecla();
             return true;
         }
@@ -124,7 +179,7 @@ static class Program
     public static void MostrarGanador()
     {
         Console.Clear();
-        Tateti();
+        CartelTateti();
         ConsolaLetraColorMagenta();
         ElGanador();
         TableroGanador();
@@ -155,14 +210,14 @@ static class Program
             jugadorDos++;
 
         }
-        Console.WriteLine(frase);
+        Console.Write(frase);
 
         EscribirTxt(frase);
     }
 
-    public static bool Ganador() => GanadorH() || GanadorV() || GanadorD();
+    public static bool Ganador() => GanadorHorizontal() || GanadorVertical() || GanadorDiagonal();
 
-    public static bool GanadorD()
+    public static bool GanadorDiagonal()
     {
         if (posiciones[0, 0] == posiciones[1, 1] && posiciones[0, 0] == posiciones[2, 2])
             return true;
@@ -174,7 +229,7 @@ static class Program
         return false;
     }
 
-    public static bool GanadorV()
+    public static bool GanadorVertical()
     {
         for (int i = 0; i < 3; i++)
         {
@@ -184,7 +239,7 @@ static class Program
         return false;
     }
 
-    public static bool GanadorH()
+    public static bool GanadorHorizontal()
     {
         for (int i = 0; i < 3; i++)
         {
@@ -256,42 +311,11 @@ static class Program
         return false;
     }
 
-    public static void CargarPosiciones()
-    {
-        jagadas = 0;
-        int pos = 49;
-        for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 3; j++)
-                posiciones[i, j] = (char)(j + pos);
 
-            pos += 3;
-        }
-    }
 
-    public static void Tablero()
-    {
-        ConsolaLetraColorWhite();
-        Console.WriteLine($"");
 
-        for (int i = 0; i < 3; i++)
-        {
-            Console.WriteLine($"\t\t       {posiciones[i, 0]} | {posiciones[i, 1]} | {posiciones[i, 2]}");
-            if (i < 2)
-                Console.WriteLine($"\t\t       ---------");
-        }
-    }
 
-    public static void LetraColor(char pos)
-    {
-        if (ganador && !turno && pos == 'X')
-            ConsolaLetraColorGreen();
-        else if (ganador && turno && pos == 'O')
-            ConsolaLetraColorCyan();
-        else
-            ConsolaLetraColorWhite();
 
-    }
     public static void TableroGanador()
     {
         Console.WriteLine($"\n");
@@ -318,30 +342,9 @@ static class Program
         Console.WriteLine("");
     }
 
-    public static void Tateti()
-    {
-        string[] tateti = [ "  _____  _           _____ _____         _____ ___ " ,
-                            " |_   _|/ \\         |_   _| ____|       |_   _|_ _|" ,
-                            "   | | / _ \\   ____   | | |  _|    ____   | |  | | " ,
-                            "   | |/ ___ \\ |____|  | | | |___  |____|  | |  | | " ,
-                            "   |_/_/   \\_\\        |_| |_____|         |_| |___|\n" ];
 
-        ColorRandom();
-        foreach (var item in tateti)
-        {
-            Console.WriteLine(item);
-        }
-    }
 
-    public static void MostrarPuntaje()
-    {
-        ConsolaLetraColorYellow();
-        Console.WriteLine($"\t\t\tPUNTAJE");
-        ConsolaLetraColorGreen();
-        Console.Write($"  \"Jugador Uno X\": {jugadorUno}");
-        ConsolaLetraColorCyan();
-        Console.WriteLine($"\t\t  \"Jugador Dos O\": {jugadorDos}");
-    }
+
 
     public static void MostrarJuagador(string jugador)
     {
@@ -353,7 +356,7 @@ static class Program
     {
         fails++;
         Console.Clear();
-        Tateti();
+        CartelTateti();
         ConsolaLetraColorRed();
         Console.WriteLine($"{frase}\n Presione una tecla para continuar");
         Console.ReadKey(true);
@@ -363,6 +366,17 @@ static class Program
     {
         jugadorDos = 0;
         jugadorUno = 0;
+    }
+
+    public static void LetraColor(char pos)
+    {
+        if (ganador && !turno && pos == 'X')
+            ConsolaLetraColorGreen();
+        else if (ganador && turno && pos == 'O')
+            ConsolaLetraColorCyan();
+        else
+            ConsolaLetraColorWhite();
+
     }
 
     public static void ColorRandom()
@@ -405,4 +419,16 @@ static class Program
         st.Flush();
         st.Close();
     }
+
+
+
+    public static void VistaNormal()
+    {
+        Console.Clear();
+        CartelTateti();
+        MostrarPuntaje();
+        Tablero();
+    }
+
+
 }
