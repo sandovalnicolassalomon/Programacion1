@@ -8,7 +8,7 @@ namespace ejercicio9
     public static class ElTablero
     {
 
-        public static char[,] posiciones = new char[3, 3];
+        public static readonly char[,] posiciones = new char[3, 3];
 
 
         public static void Tablero()
@@ -18,9 +18,9 @@ namespace ejercicio9
 
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine($"\t\t       {posiciones[i, 0]} | {posiciones[i, 1]} | {posiciones[i, 2]}");
+                Console.WriteLine($"\t\t\t\t  {posiciones[i, 0]} | {posiciones[i, 1]} | {posiciones[i, 2]}");
                 if (i < 2)
-                    Console.WriteLine($"\t\t       ---------");
+                    Console.WriteLine($"\t\t\t\t  ---------");
             }
         }
         public static void TableroGanador()
@@ -28,7 +28,7 @@ namespace ejercicio9
             Console.WriteLine($"\n");
             for (int i = 0; i < 3; i++)
             {
-                Console.Write($"\t\t       ");
+                Console.Write($"\t\t\t\t\t  ");
                 for (int j = 0; j < 3; j++)
                 {
                     ColorGl.LetraColor(posiciones[i, j]);
@@ -43,7 +43,7 @@ namespace ejercicio9
                 if (i < 2)
                 {
                     ColorGl.ConsolaLetraColorWhite();
-                    Console.WriteLine($"\n\t\t       ---------");
+                    Console.WriteLine($"\n\t\t\t\t\t  ---------");
                 }
             }
             Console.WriteLine("");
@@ -51,7 +51,7 @@ namespace ejercicio9
 
         public static void CargarPosiciones()
         {
-            Var.jagadas = 0;
+            Program.misVar.Jagadas = 0;
             int pos = 49;
             for (int i = 0; i < 3; i++)
             {

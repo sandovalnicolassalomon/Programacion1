@@ -10,3 +10,87 @@
 
  13/8/2024 17:43:14 
  El ganador es el jugador UNO X
+
+ 17/8/2024 17:41:47 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 17:42:07 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 17:42:48 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 17:51:24 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 17:58:44 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:00:16 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:00:54 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:01:03 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:09:29 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:09:51 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:11:32 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:11:40 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:12:54 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:13:04 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:13:28 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:13:49 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:14:08 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:14:51 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:15:00 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:17:25 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:17:32 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:24:22 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:25:24 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:25:37 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:25:52 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:26:12 
+ El ganador es el jugador UNO X
+
+ 17/8/2024 18:27:45 
+ El ganador es el jugador DOS O
+
+ 17/8/2024 18:28:58 
+ El ganador es el jugador UNO X

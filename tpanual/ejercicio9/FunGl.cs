@@ -10,7 +10,7 @@ namespace ejercicio9
        
         public static void TurnoJugador()
         {
-            if (Var.turno)
+            if (Program.misVar.Turno)
                 MostrarJuagador("Uno X");
             else
                 MostrarJuagador("Dos O");
@@ -18,11 +18,11 @@ namespace ejercicio9
 
         public static void MostrarJuagador(string jugador)
         {
-            Console.ForegroundColor = Var.turno ? ConsoleColor.Green : ConsoleColor.Cyan;
+            ColorGl.ColorJugador();
             Console.WriteLine($"\nTurno de jugador {jugador}".ToUpper());
         }
 
-
+       
 
         public static void VistaNormal()
         {
@@ -64,11 +64,11 @@ namespace ejercicio9
         public static void MostrarPuntaje()
         {
             ColorGl.ConsolaLetraColorYellow();
-            Console.WriteLine($"\t\t\tPUNTAJE");
+            Console.WriteLine($"\t\t\t\t   PUNTAJE");
             ColorGl.ConsolaLetraColorGreen();
-            Console.Write($"  \"Jugador Uno X\": {Var.jugadorUno}");
+            Console.Write($"\t     \"Jugador Uno X\": {Program.misVar.JugadorUno}");
             ColorGl.ConsolaLetraColorCyan();
-            Console.WriteLine($"\t\t  \"Jugador Dos O\": {Var.jugadorDos}");
+            Console.WriteLine($"\t\t     \"Jugador Dos O\": {Program.misVar.JugadorDos}");
         }
 
         public static void PressTecla()

@@ -1,9 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\Programacion1\\tpanual\\ejercicio9\\",
+  "WorkspaceRootPath": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|d:\\users\\n.sandoval\\documents\\isftn931b\\programacion1\\programacion1\\tpanual\\ejercicio9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\opcionesjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:opcionesjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\eljuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:eljuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\eltablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:eltablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\fungl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:fungl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\elganador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:elganador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\cartel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:cartel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\colorgl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:colorgl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\misvar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:misvar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|e:\\cshaprepos\\programacion1\\tpanual\\ejercicio9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D93ED44-6CDB-4C59-A540-8EAC650FD37A}|ejercicio9.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +70,117 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ColorGl.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ColorGl.cs",
+              "RelativeDocumentMoniker": "ColorGl.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ColorGl.cs",
+              "RelativeToolTip": "ColorGl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:39:32.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ElTablero.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ElTablero.cs",
+              "RelativeDocumentMoniker": "ElTablero.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ElTablero.cs",
+              "RelativeToolTip": "ElTablero.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:36:55.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ElJuego.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ElJuego.cs",
+              "RelativeDocumentMoniker": "ElJuego.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ElJuego.cs",
+              "RelativeToolTip": "ElJuego.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:35:14.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cartel.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\Cartel.cs",
+              "RelativeDocumentMoniker": "Cartel.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\Cartel.cs",
+              "RelativeToolTip": "Cartel.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAYwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:34:23.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MisVar.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\MisVar.cs",
+              "RelativeDocumentMoniker": "MisVar.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\MisVar.cs",
+              "RelativeToolTip": "MisVar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:23:10.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OpcionesJuego.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\OpcionesJuego.cs",
+              "RelativeDocumentMoniker": "OpcionesJuego.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\OpcionesJuego.cs",
+              "RelativeToolTip": "OpcionesJuego.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:19:26.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FunGl.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\FunGl.cs",
+              "RelativeDocumentMoniker": "FunGl.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\FunGl.cs",
+              "RelativeToolTip": "FunGl.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwEIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T17:56:42.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ElGanador.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ElGanador.cs",
+              "RelativeDocumentMoniker": "ElGanador.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ElGanador.cs",
+              "RelativeToolTip": "ElGanador.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIA6wA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T17:56:21.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\Programacion1\\tpanual\\ejercicio9\\Program.cs",
+              "DocumentMoniker": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Users\\n.sandoval\\Documents\\ISFTN931B\\Programacion1\\Programacion1\\tpanual\\ejercicio9\\Program.cs",
+              "ToolTip": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAJQBAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-28T17:54:44.87Z",
               "EditorCaption": ""

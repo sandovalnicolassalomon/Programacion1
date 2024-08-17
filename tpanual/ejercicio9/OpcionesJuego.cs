@@ -14,19 +14,19 @@ namespace ejercicio9
             {
                 if (ValidarPosicion(eleccion))
                 {
-                    Var.turno = !Var.turno;
-                    Var.fails = 0;
-                    Var.jagadas++;
+                    Program.misVar.Turno = !Program.misVar.Turno;
+                    Program.misVar.Fails = 0;
+                    Program.misVar.Jagadas++;
                     return true;
                 }
                 else
                 {
-                    OpcionInvalida($"Opcion Invalida {Var.fails}");
+                    OpcionInvalida($"Opcion Invalida {Program.misVar.Fails}");
                 }
             }
             else
             {
-                OpcionInvalida($"Opcion Invalida {Var.fails}");
+                OpcionInvalida($"Opcion Invalida {Program.misVar.Fails}");
             }
             return false;
         }
@@ -40,7 +40,7 @@ namespace ejercicio9
                 {
                     if (ElTablero.posiciones[i, j] == miEleccion)
                     {
-                        if (Var.turno)
+                        if (Program.misVar.Turno)
                             ElTablero.posiciones[i, j] = 'X';
                         else
                             ElTablero.posiciones[i, j] = 'O';
@@ -75,7 +75,7 @@ namespace ejercicio9
 
         public static void OpcionInvalida(string frase)
         {
-            Var.fails++;
+            Program.misVar.Fails++;
             Console.Clear();
             Cartel.Tateti();
             ColorGl.ConsolaLetraColorRed();

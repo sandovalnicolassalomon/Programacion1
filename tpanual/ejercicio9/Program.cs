@@ -1,12 +1,10 @@
-﻿using System.Text.RegularExpressions;
-using System.Xml;
-using System.Xml.Serialization;
+﻿
 namespace ejercicio9;
 static class Program
 {
 
-
-    public static void Main(string[] args)
+    public static readonly MisVar misVar = new();
+    public static void Main()
     {
         App();
     }

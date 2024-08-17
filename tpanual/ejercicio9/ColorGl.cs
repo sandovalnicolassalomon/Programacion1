@@ -7,11 +7,16 @@ namespace ejercicio9
 {
     public static class ColorGl
     {
+
+        public static void ColorJugador()
+        {
+            Console.ForegroundColor = Program.misVar.Turno ? ConsoleColor.Green : ConsoleColor.Cyan;
+        }
         public static void LetraColor(char pos)
         {
-            if (Var.ganador && !Var.turno && pos == 'X')
+            if (Program.misVar.Ganador && !Program.misVar.Turno && pos == 'X')
                 ConsolaLetraColorGreen();
-            else if (Var.ganador && Var.turno && pos == 'O')
+            else if (Program.misVar.Ganador && Program.misVar.Turno && pos == 'O')
                 ConsolaLetraColorCyan();
             else
                 ConsolaLetraColorWhite();

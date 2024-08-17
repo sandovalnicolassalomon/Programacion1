@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ejercicio9
 {
@@ -19,9 +16,9 @@ namespace ejercicio9
                 if (eleccion == "0")
                 {
                     Console.Clear();
-                    Cartel.Tateti();
                     TeRendiste();
                     ElGanador.MiGanador();
+                    ColorGl.ColorJugador();
                     Cartel.Ganador();
                     ElTablero.TableroGanador();
                     FunGl.PressTecla();
@@ -30,32 +27,32 @@ namespace ejercicio9
 
                 bool marca = OpcionesJuego.MarcarPosicion(eleccion);
 
-                if (marca && Var.jagadas > 4) { Var.ganador = ElGanador.Ganador(); }
+                if (marca && Program.misVar.Jagadas > 4) { Program.misVar.Ganador = ElGanador.Ganador(); }
 
-                if (Var.ganador)
+                if (Program.misVar.Ganador)
                 {
 
                     ElGanador.MostrarGanador();
                 }
 
-                if (!Var.ganador)
-                    Var.ganador = Empate(Var.ganador);
+                if (!Program.misVar.Ganador)
+                    Program.misVar.Ganador = Empate(Program.misVar.Ganador);
 
 
 
-            } while (!Var.ganador);
-            Var.ganador = false;
+            } while (!Program.misVar.Ganador);
+            Program.misVar.Ganador = false;
         }
 
         public static void ResetPuntaje()
         {
-            Var.jugadorDos = 0;
-            Var.jugadorUno = 0;
+            Program.misVar.JugadorDos = 0;
+            Program.misVar.JugadorUno = 0;
         }
 
         public static void TeRendiste()
         {
-            if (Var.turno)
+            if (Program.misVar.Turno)
                 Console.WriteLine($"Jugador UNO X Te rendiste...");
             else
                 Console.WriteLine($"Jugador DOS O Te rendiste...");
@@ -64,13 +61,13 @@ namespace ejercicio9
 
         public static bool Empate(bool ganador)
         {
-            if (Var.jagadas == 9 && !ganador)
+            if (Program.misVar.Jagadas == 9 && !ganador)
             {
                 Console.Clear();
                 Cartel.Tateti();
                 ColorGl.ConsolaLetraColorRed();
                 Cartel.Empate();
-                ElTablero.TableroGanador();
+                ElTablero.Tablero();
                 FunGl.PressTecla();
                 return true;
             }

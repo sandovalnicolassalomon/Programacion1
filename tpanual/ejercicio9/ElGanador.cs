@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+
 namespace ejercicio9
 {
     public static class ElGanador
@@ -11,8 +13,6 @@ namespace ejercicio9
         public static void MostrarGanador()
         {
             Console.Clear();
-            Cartel.Tateti();
-            ColorGl.ConsolaLetraColorMagenta();
             Cartel.Ganador();
 
             MiGanador();
@@ -24,12 +24,12 @@ namespace ejercicio9
         public static void MiGanador()
         {
             string frase = "El ganador es el jugador ";
-            if (!Var.turno)
+            if (!Program.misVar.Turno)
             {
                 ColorGl.ConsolaLetraColorGreen();
                 Cartel.JuadorX();
                 frase += "UNO X";
-                Var.jugadorUno++;
+                Program.misVar.JugadorUno++;
 
             }
             else
@@ -37,7 +37,7 @@ namespace ejercicio9
                 ColorGl.ConsolaLetraColorCyan();
                 frase += "DOS O";
                 Cartel.JuadorO();
-                Var.jugadorDos++;
+                Program.misVar.JugadorDos++;
 
             }
 
