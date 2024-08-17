@@ -64,6 +64,10 @@ namespace ejercicio9
                     ElJuego.ResetPuntaje();
                     break;
 
+                case "3":
+                    Configuracion.MenuConfiguracion();
+                    break;
+
                 case "0":
                     return;
 

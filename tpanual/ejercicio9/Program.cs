@@ -18,7 +18,8 @@ static class Program
             FunGl.VistaNormal();
             FunGl.MenuPrincipal();
             opcion = Console.ReadLine() ?? "";
-            Console.Beep();
+            if (Program.misVar.Sonido) Console.Beep();
+
             OpcionesJuego.SeleccionOpcion(opcion);
         } while (opcion != "0");
     }

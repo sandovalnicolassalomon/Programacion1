@@ -14,6 +14,7 @@ namespace ejercicio9
         public  bool Turno { get; set; } = true;
         public int Jagadas { get; set; } = 0;
         public  bool Ganador { get; set; } = false;
+        public bool Sonido { get; set; } = false;
 
     }
 }

@@ -12,7 +12,8 @@ namespace ejercicio9
                 FunGl.TurnoJugador();
 
                 string eleccion = FunGl.EleccionPosicion();
-                Console.Beep();
+                if (Program.misVar.Sonido) Console.Beep();
+
                 if (eleccion == "0")
                 {
                     Console.Clear();

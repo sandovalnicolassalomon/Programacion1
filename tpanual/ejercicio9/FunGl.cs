@@ -44,6 +44,8 @@ namespace ejercicio9
             ColorGl.ConsolaLetraColorWhite();
             Console.WriteLine($"1- Jugar");
             Console.WriteLine($"2- Resetear Puntajes");
+            Console.WriteLine($"3- Configuracion");
+
 
             Console.WriteLine($"0- Salir");
         }
