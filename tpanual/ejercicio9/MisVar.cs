@@ -15,6 +15,7 @@ namespace ejercicio9
         public int Jagadas { get; set; } = 0;
         public  bool Ganador { get; set; } = false;
         public bool Sonido { get; set; } = false;
+        public bool Tema { get; set; } = true;
 
     }
 }

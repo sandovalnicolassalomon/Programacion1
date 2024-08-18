@@ -6,6 +6,7 @@ static class Program
     public static readonly MisVar misVar = new();
     public static void Main()
     {
+        Console.BackgroundColor = ConsoleColor.Black;
         App();
     }
 
@@ -18,7 +19,7 @@ static class Program
             FunGl.VistaNormal();
             FunGl.MenuPrincipal();
             opcion = Console.ReadLine() ?? "";
-            if (Program.misVar.Sonido) Console.Beep();
+            if (misVar.Sonido) Console.Beep();
 
             OpcionesJuego.SeleccionOpcion(opcion);
         } while (opcion != "0");

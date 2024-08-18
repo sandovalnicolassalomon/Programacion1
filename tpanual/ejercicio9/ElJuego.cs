@@ -18,11 +18,7 @@ namespace ejercicio9
                 {
                     Console.Clear();
                     TeRendiste();
-                    ElGanador.MiGanador();
-                    ColorGl.ColorJugador();
-                    Cartel.Ganador();
-                    ElTablero.TableroGanador();
-                    FunGl.PressTecla();
+                   
                     return;
                 }
 
@@ -53,11 +49,16 @@ namespace ejercicio9
 
         public static void TeRendiste()
         {
+
             if (Program.misVar.Turno)
                 Console.WriteLine($"Jugador UNO X Te rendiste...");
             else
                 Console.WriteLine($"Jugador DOS O Te rendiste...");
-
+            ColorGl.ColorJugador();
+            Cartel.Ganador();
+            ElGanador.MiGanador();
+            ElTablero.TableroGanador();
+            FunGl.PressTecla();
         }
 
         public static bool Empate(bool ganador)

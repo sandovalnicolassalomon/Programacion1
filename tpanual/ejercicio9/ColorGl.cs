@@ -10,7 +10,7 @@ namespace ejercicio9
 
         public static void ColorJugador()
         {
-            Console.ForegroundColor = Program.misVar.Turno ? ConsoleColor.Green : ConsoleColor.Cyan;
+            Console.ForegroundColor = Program.misVar.Turno ? ConsoleColor.DarkGreen : ConsoleColor.DarkCyan;
         }
         public static void LetraColor(char pos)
         {
@@ -49,12 +49,14 @@ namespace ejercicio9
             }
         }
 
-        public static void ConsolaLetraColorGreen() => Console.ForegroundColor = ConsoleColor.Green;
-        public static void ConsolaLetraColorCyan() => Console.ForegroundColor = ConsoleColor.Cyan;
+        public static void ConsolaLetraColorGreen() => Console.ForegroundColor = ConsoleColor.DarkGreen;
+        public static void ConsolaLetraColorCyan() => Console.ForegroundColor = ConsoleColor.DarkCyan;
         public static void ConsolaLetraColorRed() => Console.ForegroundColor = ConsoleColor.Red;
         public static void ConsolaLetraColorMagenta() => Console.ForegroundColor = ConsoleColor.Magenta;
-        public static void ConsolaLetraColorYellow() => Console.ForegroundColor = ConsoleColor.Yellow;
-        public static void ConsolaLetraColorWhite() => Console.ForegroundColor = ConsoleColor.White;
-
+        public static void ConsolaLetraColorYellow() => Console.ForegroundColor = ConsoleColor.DarkYellow;
+        public static void ConsolaLetraColorWhite() {
+            if(Program.misVar.Tema) Console.ForegroundColor = ConsoleColor.White;
+            else Console.ForegroundColor = ConsoleColor.Black;
+        }
     }
 }

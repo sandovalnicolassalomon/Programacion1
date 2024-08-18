@@ -29,6 +29,8 @@ namespace ejercicio9
 
             ColorGl.ConsolaLetraColorWhite();
             Console.WriteLine($"1- Menú Sonido");
+            Console.WriteLine($"2- Menú Tema");
+
 
 
 
@@ -43,6 +45,9 @@ namespace ejercicio9
                 case "1":
                     MenuSonido();
                     break;
+                case "2":
+                    MenuTema();
+                    break;
                 case "0":
                     return;
                 default:
@@ -51,10 +56,46 @@ namespace ejercicio9
             }
         }
 
+        private static void MenuTema()
+        {
+            ColorGl.ConsolaLetraColorYellow();
+            Console.WriteLine("\nMenú TEMA\n");
+
+            Console.WriteLine("\nIngrese una opcion segun su indice y oprima enter\n");
+
+            ColorGl.ConsolaLetraColorWhite();
+            Console.WriteLine($"1- Claro");
+            Console.WriteLine($"2- Oscuro");
+
+            Console.WriteLine($"0- Salir");
+            SeleccionTema();
+        }
+
+        private static void SeleccionTema()
+        {
+            string opcion = Console.ReadLine() ?? "2";
+            if (opcion != "1" && opcion != "2" && opcion != "0")
+            {
+                OpcionesJuego.OpcionInvalida("Opcion Invalidad");
+            }
+
+            else if (opcion == "1")
+            {
+                Program.misVar.Tema = false;
+                Console.BackgroundColor = ConsoleColor.Gray;
+            }
+            else if (opcion == "2")
+            { 
+                Program.misVar.Tema = true;
+                Console.BackgroundColor = ConsoleColor.Black;
+            }
+           
+        }
+
         private static void MenuSonido()
         {
             ColorGl.ConsolaLetraColorYellow();
-            Console.WriteLine("\nSONIDO\n");
+            Console.WriteLine("\nMenú SONIDO\n");
 
             Console.WriteLine("\nIngrese una opcion segun su indice y oprima enter\n");
 
@@ -65,7 +106,7 @@ namespace ejercicio9
             Console.WriteLine($"0- Salir");
             SeleccionSonido();
         
-            }
+        }
 
         private static void SeleccionSonido()
         {
