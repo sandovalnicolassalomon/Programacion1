@@ -1,0 +1,19 @@
+FileStream fs = new FileStream(@"C:\prueba.txt", FileMode.OpenOrCreate, FileAccess.Write, FileShare.None);
+
+El arroba evita que tengamos que poner doble barra en las rutas de archivos.
+
+FileMode: de que modo voy a usar ese archivo. "open or create" o abre o create
+
+FileAccess: para leer o para escribir
+
+FileShare: si quiero compartir. por defecto es None.
+
+
+modo reducido
+
+FileStream fs = File.Create(@"C:\prueba.txt");
+
+
+StreamWrite sw = new StreamWriter(@"C:\prueba.txt");
+
+s

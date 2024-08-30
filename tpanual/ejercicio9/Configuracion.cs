@@ -23,7 +23,7 @@ namespace ejercicio9
 
         private static void Menu()
         {
-            ColorGl.ConsolaLetraColorYellow();
+            ColorGl.ConsolaLetraColorMagenta();
 
             Console.WriteLine("\nIngrese una opcion segun su indice y oprima enter\n");
 

@@ -17,5 +17,7 @@ namespace ejercicio9
         public bool Sonido { get; set; } = false;
         public bool Tema { get; set; } = true;
 
+        public string ArchivoHistorial { get; set; } = "historial.txt";
+
     }
 }

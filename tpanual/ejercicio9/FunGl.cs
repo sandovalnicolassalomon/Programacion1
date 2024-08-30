@@ -79,12 +79,6 @@ namespace ejercicio9
             Console.ReadKey();
         }
 
-        public static void EscribirTxt(string frase)
-        {
-            using StreamWriter st = new("historial.txt", true);
-            st.WriteLine($"\n {DateTime.Now} \n {frase}");
-            st.Flush();
-            st.Close();
-        }
+       
     }
 }

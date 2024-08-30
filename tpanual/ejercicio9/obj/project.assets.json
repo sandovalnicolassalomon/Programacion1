@@ -13,22 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ejercicio9.csproj",
+      "projectUniqueName": "C:\\Users\\nicos\\Documents\\Programacion1\\tpanual\\ejercicio9\\ejercicio9.csproj",
       "projectName": "ejercicio9",
-      "projectPath": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\ejercicio9.csproj",
+      "projectPath": "C:\\Users\\nicos\\Documents\\Programacion1\\tpanual\\ejercicio9\\ejercicio9.csproj",
       "packagesPath": "C:\\Users\\nicos\\.nuget\\packages\\",
-      "outputPath": "E:\\cshaprepos\\Programacion1\\tpanual\\ejercicio9\\obj\\",
+      "outputPath": "C:\\Users\\nicos\\Documents\\Programacion1\\tpanual\\ejercicio9\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nicos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\nicos\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

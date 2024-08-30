@@ -51,8 +51,8 @@ namespace ejercicio9
 
         public static void ConsolaLetraColorGreen() => Console.ForegroundColor = ConsoleColor.DarkGreen;
         public static void ConsolaLetraColorCyan() => Console.ForegroundColor = ConsoleColor.DarkCyan;
-        public static void ConsolaLetraColorRed() => Console.ForegroundColor = ConsoleColor.Red;
-        public static void ConsolaLetraColorMagenta() => Console.ForegroundColor = ConsoleColor.Magenta;
+        public static void ConsolaLetraColorRed() => Console.ForegroundColor = ConsoleColor.DarkRed;
+        public static void ConsolaLetraColorMagenta() => Console.ForegroundColor = ConsoleColor.DarkMagenta;
         public static void ConsolaLetraColorYellow() => Console.ForegroundColor = ConsoleColor.DarkYellow;
         public static void ConsolaLetraColorWhite() {
             if(Program.misVar.Tema) Console.ForegroundColor = ConsoleColor.White;

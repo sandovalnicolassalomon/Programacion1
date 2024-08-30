@@ -41,7 +41,10 @@ namespace ejercicio9
 
             }
 
-            FunGl.EscribirTxt(frase);
+            FunAccesoArchivos.EscribirTxt(frase);
+
+            // PFunAccesoArchivo.Escribir(frase);
+            // PFunAccesoArchivo.CerrarTxt();
         }
 
         public static bool Ganador() => GanadorHorizontal() || GanadorVertical() || GanadorDiagonal();
