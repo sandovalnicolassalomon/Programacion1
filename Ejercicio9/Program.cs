@@ -9,10 +9,6 @@ namespace Ejercicio9
     {
 
 
-        /// <summary>
-        /// instancia de la structura para usar de datos rapidos
-        /// </summary>
-        /// 
         public static MisVar misVar = new MisVar()
         {
             Fails = 0,
@@ -23,14 +19,15 @@ namespace Ejercicio9
             Tema = true,
             Ganador = false,
             Sonido = false,
-            ArchivoHistorial = "historial.txt"
+            ArchivoHistorial = "historial.txt",
+            Random = new Random()
         };
+
         // esto es um momentario
         public static void Main()
         {
             Console.BackgroundColor = ConsoleColor.Black;
             FunGl.App();
-            PFunAccesoArchivo.CerrarTxt();
 
         }
 

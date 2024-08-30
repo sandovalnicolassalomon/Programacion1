@@ -40,7 +40,10 @@ namespace Ejercicio9
             }
 
             string puntaje = "\nPUNTAJE\n\"Jugador Uno X\": "+Program.misVar.JugadorUno + "\n\"Jugador Dos O\": "+Program.misVar.JugadorDos;
+            PAccesoArchivo.AbrirTxt();
             PFunAccesoArchivo.Escribir(frase + puntaje);
+            PFunAccesoArchivo.CerrarTxt();
+
         }
 
         public static bool Ganador() { return GanadorHorizontal() || GanadorVertical() || GanadorDiagonal(); }

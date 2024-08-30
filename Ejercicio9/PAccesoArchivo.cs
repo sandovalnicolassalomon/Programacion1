@@ -8,6 +8,11 @@ namespace Ejercicio9
 {
     public static class PAccesoArchivo
     {
-        public static StreamWriter streamWriter = File.AppendText(Program.misVar.ArchivoHistorial);
+        public static StreamWriter streamWriter;
+
+        public static void AbrirTxt()
+        {
+            streamWriter = File.AppendText(Program.misVar.ArchivoHistorial);
+        }        
     }
 }

@@ -15,6 +15,7 @@ namespace Ejercicio9
         public bool Ganador { get; set; }
         public bool Sonido { get; set; }
         public bool Tema { get; set; }
+        public Random Random { get; set; }
 
         public string ArchivoHistorial { get; set; }
 
