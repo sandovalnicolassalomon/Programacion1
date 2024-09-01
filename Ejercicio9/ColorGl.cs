@@ -25,7 +25,7 @@ namespace Ejercicio9
 
         public static void ColorRandom()
         {
-            switch (Program.misVar.Random.Next(0, 5))
+            switch (Program.misVar.NRandom.Next(0, 5))
             {
                 case 0:
                     ConsolaLetraGreen();

@@ -21,12 +21,12 @@ namespace Ejercicio9
                 }
                 else
                 {
-                    OpcionInvalida("Opcion Invalida "+Program.misVar.Fails);
+                    OpcionInvalida("Opcion Invalida "+ Program.misVar.Fails);
                 }
             }
             else
             {
-                OpcionInvalida("Opcion Invalida "+Program.misVar.Fails);
+                OpcionInvalida("Opcion Invalida "+ Program.misVar.Fails);
             }
             return false;
         }

@@ -5,10 +5,12 @@ using System.Text;
 
 namespace Ejercicio9
 {
-      public static class ElJuego
+    public static class ElJuego
     {
         public static void Juego()
         {
+            Program.misVar.RelojUno.Reset();
+            Program.misVar.RelojDos.Reset();
             do
             {
                 FunGl.VistaNormal();
@@ -21,22 +23,26 @@ namespace Ejercicio9
                 {
                     Console.Clear();
                     TeRendiste();
-                   
+
                     return;
                 }
 
                 bool marca = OpcionesJuego.MarcarPosicion(eleccion);
 
-                if (marca && Program.misVar.Jagadas > 4) { Program.misVar.Ganador = ElGanador.Ganador(); }
-
-                if (Program.misVar.Ganador)
+                if (marca && Program.misVar.Jagadas > 4)
                 {
+                    Program.misVar.Ganador = ElGanador.Ganador();
 
-                    ElGanador.MostrarGanador();
+
+                    if (Program.misVar.Ganador)
+                    {
+                        PararRelojes();
+                        ElGanador.MostrarGanador();
+                    }
+
+                    if (!Program.misVar.Ganador)
+                        Program.misVar.Ganador = Empate(Program.misVar.Ganador);
                 }
-
-                if (!Program.misVar.Ganador)
-                    Program.misVar.Ganador = Empate(Program.misVar.Ganador);
 
 
 
@@ -44,10 +50,18 @@ namespace Ejercicio9
             Program.misVar.Ganador = false;
         }
 
+        public static void PararRelojes()
+        {
+            Program.misVar.RelojUno.Stop();
+            Program.misVar.RelojDos.Stop();
+
+        }
+
+
         public static void ResetPuntaje()
         {
-            Program.misVar.JugadorDos = 0;
-            Program.misVar.JugadorUno = 0;
+            Program.misVar.PutnoJugadorDos = 0;
+            Program.misVar.PuntoJugadorUno = 0;
         }
 
         public static void TeRendiste()

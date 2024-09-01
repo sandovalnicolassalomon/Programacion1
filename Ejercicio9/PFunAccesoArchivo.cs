@@ -10,12 +10,13 @@ namespace Ejercicio9
     {
         public static void Escribir(string frase)
         {
-            PAccesoArchivo.streamWriter.WriteLine("\n"+DateTime.Now +"\n"+ frase);
+            PAccesoArchivo.sw.WriteLine("\n"+DateTime.Now +"\n"+ frase);
+            PAccesoArchivo.sw.Flush();
         }
 
         public static void CerrarTxt()
         {
-            PAccesoArchivo.streamWriter.Close();
+            PAccesoArchivo.sw.Close();
         }
     }
 }

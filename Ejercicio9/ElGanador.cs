@@ -27,7 +27,8 @@ namespace Ejercicio9
                 ColorGl.ConsolaLetraGreen();
                 Cartel.JuadorX();
                 frase += "UNO X";
-                Program.misVar.JugadorUno++;
+                FunGl.SeleccionPuntaje();
+               
 
             }
             else
@@ -35,14 +36,14 @@ namespace Ejercicio9
                 ColorGl.ConsolaLetraCyan();
                 frase += "DOS O";
                 Cartel.JuadorO();
-                Program.misVar.JugadorDos++;
+                FunGl.SeleccionPuntaje();
+
 
             }
 
-            string puntaje = "\nPUNTAJE\n\"Jugador Uno X\": "+Program.misVar.JugadorUno + "\n\"Jugador Dos O\": "+Program.misVar.JugadorDos;
-            PAccesoArchivo.AbrirTxt();
-            PFunAccesoArchivo.Escribir(frase + puntaje);
-            PFunAccesoArchivo.CerrarTxt();
+            string puntaje = "\nPUNTAJE\n\"Jugador Uno X\": "+Program.misVar.PuntoJugadorUno + "\n\"Jugador Dos O\": "+Program.misVar.PutnoJugadorDos;
+            string tiempo = "\nTIEMPO\n\"Jugador Uno X\": " + Program.misVar.RelojUno.Elapsed + "\n\"Jugador Dos O\": " + Program.misVar.RelojDos.Elapsed;
+            PFunAccesoArchivo.Escribir(frase + puntaje + tiempo);
 
         }
 
