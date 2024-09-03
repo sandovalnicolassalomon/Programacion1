@@ -20,3 +20,4 @@ El bloque `using` cumple con las siguientes funciones:
 3. **Simplifica el código**: El bloque `using` simplifica el código, ya que no es necesario escribir código adicional para liberar los recursos.
 
 En resumen, el bloque `using` es una forma segura y eficiente de utilizar objetos que implementan la interfaz `IDisposable`, garantizando que los recursos sean liberados correctamente y simplificando el código.
+y nada mas que eso, asi que bueno espero que te guste
